@@ -1,0 +1,16 @@
+.btnAddBasket {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: white;
+  .btnAddBasket__title {
+    transition: all 0.3s;
+  }
+  .btnAddBasket__icon {
+    transition: all 0.3s;
+  }
+}

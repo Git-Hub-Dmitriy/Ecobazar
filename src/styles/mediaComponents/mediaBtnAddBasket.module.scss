@@ -1,0 +1,10 @@
+@media (hover: hover) {
+  #root .btnAddBasket:hover {
+    transform: scale(1.1);
+  }
+}
+@media (hover: none) {
+  #root .btnAddBasket:active {
+    transform: scale(1.1);
+  }
+}

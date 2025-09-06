@@ -1,0 +1,9 @@
+.btnAddWishlist {
+  justify-items: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  .btnAddWishlist__icon {
+    transition: all 0.3s;
+  }
+}

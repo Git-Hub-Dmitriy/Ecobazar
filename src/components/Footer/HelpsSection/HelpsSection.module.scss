@@ -1,0 +1,13 @@
+.information__helpsSection {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  h1 {
+    font-size: 1em;
+    color: white;
+    font-weight: 400;
+  }
+  a {
+    font-size: 0.875em;
+    transition: all 0.3s;
+  }
+}

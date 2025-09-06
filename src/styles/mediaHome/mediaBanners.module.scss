@@ -1,0 +1,299 @@
+@media (hover: hover) {
+  #root .banners {
+    .banners__bannar .btnShop:hover {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      color: white;
+      .btnShop__arrow {
+        stroke: white;
+      }
+    }
+    .banners__bannarOne .btnShop:hover {
+      transform: scale(1.1);
+      color: #1a1a1a;
+      .btnShop__arrow {
+        stroke: #1a1a1a;
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .banners {
+    .banners__bannar .btnShop:active {
+      transform: scale(1.1);
+      color: white;
+      background-color: #1a1a1a;
+      .btnShop__arrow {
+        stroke: white;
+      }
+    }
+    .banners__bannarOne .btnShop:active {
+      transform: scale(1.1);
+      color: black;
+      .btnShop__arrow {
+        stroke: #000000;
+      }
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .banners .banners__bannarOne .btnShop {
+    width: 30%;
+  }
+}
+@media (min-width: 2300px) {
+  #root .banners {
+    .banners__bannar .btnShop .btnShop__arrow {
+      width: 22px;
+      height: 16px;
+    }
+    .banners__bannarOne .btnShop .btnShop__arrow {
+      width: 22px;
+      height: 16px;
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #root .banners {
+    max-height: 800px;
+    .banners__bannar .btnShop {
+      height: 70px;
+      .btnShop__arrow {
+        width: 26px;
+        height: 20px;
+      }
+    }
+    .banners__bannarOne .btnShop {
+      height: 65px;
+      .btnShop__arrow {
+        width: 26px;
+        height: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 2800px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      height: 80px;
+      .btnShop__arrow {
+        width: 28px;
+        height: 22px;
+      }
+    }
+    .banners__bannarOne .btnShop {
+      height: 70px;
+      .btnShop__arrow {
+        width: 28px;
+        height: 22px;
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .banners {
+    max-height: 1000px;
+    .banners__bannar .btnShop {
+      height: 100px;
+      .btnShop__arrow {
+        width: 30px;
+        height: 26px;
+      }
+    }
+    .banners__bannarOne .btnShop {
+      height: 70px;
+      .btnShop__arrow {
+        width: 30px;
+        height: 26px;
+      }
+    }
+  }
+}
+@media (min-width: 3500px) {
+  #root .banners {
+    max-height: 1100px;
+    .banners__bannar .btnShop {
+      height: 120px;
+      .btnShop__arrow {
+        width: 34px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .banners {
+    max-height: 1300px;
+    .banners__bannar .btnShop .btnShop__arrow {
+      width: 36px;
+      height: 32px;
+    }
+  }
+}
+@media (max-width: 1840px) {
+  #root .banners .banners__bannarOne .btnShop {
+    grid-column-gap: 6px;
+  }
+}
+@media (max-width: 1770px) {
+  #root .banners .banners__bannarOne .btnShop {
+    font-size: 0.9em;
+    .btnShop__arrow {
+      width: 12px;
+      height: 10px;
+    }
+  }
+}
+@media (max-width: 1582px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      height: 45px;
+    }
+    .banners__bannarOne .btnShop {
+      font-size: 0.8em;
+      grid-column-gap: 4px;
+      width: 28.531%;
+      justify-content: start;
+      .btnShop__arrow {
+        width: 11px;
+        height: 9px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .banners {
+    font-size: 0.9em;
+    .banners__bannar .btnShop {
+      height: 35px;
+      grid-column-gap: 8px;
+      .btnShop__arrow {
+        width: 11px;
+        height: 9px;
+      }
+    }
+  }
+}
+@media (max-width: 1160px) {
+  #root .banners {
+    grid-gap: 16px;
+    .banners__bannar .btnShop {
+      height: 30px;
+      font-size: 0.9em;
+    }
+    .banners__bannarOne .btnShop {
+      width: 34%;
+      font-size: 0.8em;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  #root .banners {
+    width: 95%;
+    .banners__bannarOne .btnShop {
+      background-color: transparent;
+    }
+  }
+}
+@media (max-width: 870px) {
+  #root .banners {
+    grid-gap: 12px;
+    padding-bottom: 20px;
+    .banners__bannar .btnShop {
+      font-size: 0.7em;
+    }
+    .banners__bannarOne .btnShop {
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root .banners {
+    padding-top: 15px;
+    padding-bottom: 35px;
+    .banners__bannarOne .btnShop {
+      grid-column-gap: 0px;
+      .btnShop__arrow {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root .banners {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    .banners__bannar {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      .banners__img {
+        -o-object-position: 0% 20%;
+        object-position: 0% 20%;
+      }
+      .btnShop {
+        top: 80%;
+        font-size: 0.8em;
+        left: 72%;
+      }
+    }
+    .banners__bannarOne {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      .banners__img {
+        -o-object-position: 0% 25%;
+        object-position: 0% 25%;
+      }
+      .btnShop {
+        top: 80%;
+        background-color: white;
+        width: 21.903%;
+        height: 30px;
+        left: 72%;
+        grid-column-gap: 8px;
+        justify-content: center;
+        .btnShop__arrow {
+          display: block;
+        }
+      }
+    }
+    .banners__bannarTwo {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      .banners__img {
+        -o-object-position: 0% 33%;
+        object-position: 0% 33%;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      width: 24%;
+      grid-column-gap: 5px;
+    }
+    .banners__bannarOne .btnShop {
+      grid-column-gap: 5px;
+      width: 24%;
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      font-size: 0.7em;
+    }
+    .banners__bannarOne .btnShop {
+      font-size: 0.7em;
+    }
+  }
+}
+@media (max-width: 350px) {
+  #root .banners {
+    font-size: 0.8em;
+    .banners__bannar .btnShop .btnShop__arrow {
+      width: 10px;
+      height: 8px;
+    }
+  }
+}

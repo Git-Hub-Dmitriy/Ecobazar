@@ -1,0 +1,308 @@
+@media (hover: hover) {
+  #root .login .login__wrap {
+    .login__form {
+      .login__wrapRememberBtn {
+        .login__innerCheckbox:hover {
+          transform: scale(1.1);
+          .login__check {
+            transform: scale(1.1);
+          }
+        }
+        .login__forgot:hover {
+          transform: scale(1.1);
+        }
+      }
+      .login__btn:hover {
+        transform: scale(1.05);
+        background-color: #1a1a1a;
+      }
+    }
+    .login__innerRegister .login__link:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (hover: none) {
+  #root .login .login__wrap {
+    .login__form {
+      .login__wrapRememberBtn {
+        .login__innerCheckbox:active {
+          transform: scale(1.1);
+          .login__check {
+            transform: scale(1.1);
+          }
+        }
+        .login__forgot:active {
+          transform: scale(1.1);
+        }
+      }
+      .login__btn:active {
+        transform: scale(1.05);
+        background-color: #1a1a1a;
+      }
+    }
+    .login__innerRegister .login__link:active {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .login {
+    font-size: 1.2em;
+    .navigate {
+      height: 140px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 20px;
+          height: 21px;
+        }
+        .navigate__iconArrow {
+          width: 12px;
+          height: 10px;
+        }
+      }
+    }
+    .login__wrap {
+      grid-row-gap: 40px;
+      .login__form {
+        grid-row-gap: 35px;
+        .login__innerPassword {
+          grid-column-gap: auto 6%;
+          .login__switchPassword {
+            width: 24px;
+            height: 18px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox {
+          grid-column-gap: 14px;
+          .login__check {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .login__btn {
+          margin-top: 8px;
+          height: 50px;
+        }
+      }
+      .login__innerRegister {
+        grid-column-gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .login {
+    font-size: 1.4em;
+    .navigate .navigate__wrap {
+      .navigate__linkHome .navigate__iconHouse {
+        width: 24px;
+        height: 24px;
+      }
+      .navigate__iconArrow {
+        width: 16px;
+        height: 12px;
+      }
+    }
+    .login__wrap .login__form .login__btn {
+      height: 60px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .login {
+    font-size: 1.6em;
+    .navigate {
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 30px;
+          height: 30px;
+        }
+        .navigate__iconArrow {
+          width: 18px;
+          height: 14px;
+        }
+      }
+    }
+    .login__wrap {
+      grid-row-gap: 50px;
+      margin: 100px 0 100px 0;
+      .login__form {
+        grid-row-gap: 45px;
+        .login__innerPassword {
+          grid-column-gap: auto 8%;
+          .login__switchPassword {
+            width: 28px;
+            height: 22px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox {
+          grid-column-gap: 18px;
+          .login__check {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .login__btn {
+          margin-top: 10px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .login {
+    font-size: 1.8em;
+    .navigate {
+      height: 160px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 34px;
+          height: 34px;
+        }
+        .navigate__iconArrow {
+          width: 20px;
+          height: 18px;
+        }
+      }
+    }
+    .login__wrap {
+      grid-row-gap: 60px;
+      margin: 120px 0 120px 0;
+      .login__form {
+        grid-row-gap: 55px;
+        .login__innerPassword {
+          grid-column-gap: auto 9%;
+          .login__switchPassword {
+            width: 30px;
+            height: 25px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox {
+          .login__check {
+            border-radius: 8px;
+          }
+          .login__check[type="checkbox"]:checked::before {
+            border-radius: 8px;
+          }
+        }
+        .login__btn {
+          margin-top: 20px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .login {
+    font-size: 2em;
+    .navigate {
+      height: 180px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 36px;
+          height: 36px;
+        }
+        .navigate__iconArrow {
+          width: 22px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .login {
+    font-size: 2.2em;
+    .navigate {
+      height: 240px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 40px;
+          height: 40px;
+        }
+        .navigate__iconArrow {
+          width: 26px;
+          height: 22px;
+        }
+      }
+    }
+    .login__wrap {
+      grid-row-gap: 80px;
+      margin: 140px 0 140px 0;
+      .login__form {
+        grid-row-gap: 75px;
+        .login__innerPassword {
+          grid-column-gap: auto 10%;
+          .login__switchPassword {
+            width: 34px;
+            height: 28px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox .login__check {
+          width: 34px;
+          height: 34px;
+        }
+        .login__btn {
+          margin-top: 20px;
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root .login {
+    font-size: 0.9em;
+    .login__wrap .login__form .login__btn {
+      height: 40px;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  #root .login .login__wrap {
+    width: 35%;
+  }
+}
+@media (max-width: 1300px) {
+  #root .login .navigate {
+    height: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  #root .login {
+    .navigate {
+      height: 90px;
+      .navigate__wrap {
+        width: 95%;
+      }
+    }
+    .login__wrap {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 800px) {
+  #root .login .login__wrap {
+    margin: 50px 0 50px 0;
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  #root .login .login__wrap {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  #root .login .login__wrap {
+    width: 85%;
+    margin: 20px 0 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  #root .login .login__wrap {
+    width: 95%;
+  }
+}

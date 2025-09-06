@@ -1,0 +1,1784 @@
+@import "@styles/variables.module.scss";
+@media (min-width: 2000px) {
+  #root {
+    .header {
+      font-size: 1.2em;
+      .sectionTop .sectionTop__wrap {
+        .sectionCurrency .sectionCurrency__wrap .sectionCurrency__inner {
+          .sectionCurrency__languages .sectionCurrency__iconArrow {
+            width: 10px;
+            height: 6px;
+          }
+          .sectionCurrency__currencies .sectionCurrency__iconArrow {
+            width: 10px;
+            height: 6px;
+          }
+        }
+        .address .address__box {
+          grid-template-columns: auto auto;
+          .address__iconPoint {
+            width: 25px;
+            height: 22px;
+          }
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .logo .logo__icon {
+          width: 45px;
+          height: 40px;
+        }
+        .search {
+          height: 50px;
+          .search__form {
+            height: 100%;
+            .search__iconBox {
+              height: 100%;
+              .search__icon {
+                width: 20px;
+                height: 20px;
+              }
+            }
+            .search__input {
+              height: 100%;
+              &::placeholder {
+                padding-left: 25px;
+              }
+            }
+            .search__button {
+              height: 100%;
+              font-size: 1em;
+            }
+          }
+        }
+        .sectionMiddle__wrapBusket {
+          .linkWishlist .linkWishlist__icon {
+            width: 40px;
+            height: 35px;
+          }
+          .linkBasket {
+            .linkBasket__counter {
+              top: 4%;
+              width: 25px;
+              height: 25px;
+            }
+            .linkBasket__icon {
+              width: 40px;
+              height: 35px;
+            }
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap .sectionBottom__inner {
+        .sectionBottom__tel .sectionBottom__icon {
+          width: 34px;
+          height: 32px;
+        }
+        .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+          width: 34px;
+          height: 32px;
+        }
+      }
+    }
+  }
+  .footer {
+    font-size: 1.2em;
+    .subscription {
+      font-size: 1.2em;
+      .socialMedia {
+        .socialMedia__iconFacebook {
+          width: 50px;
+          height: 50px;
+        }
+        .socialMedia__iconTwitter {
+          width: 25px;
+          height: 25px;
+        }
+        .socialMedia__iconInstagram {
+          width: 25px;
+          height: 25px;
+        }
+        .socialMedia__iconPatreon {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .information .information__wrap {
+      font-size: 1.2em;
+      .information__info .information__innerContact {
+        .footerContact {
+          .logo .logo__icon {
+            width: 45px;
+            height: 40px;
+          }
+          .footerContact__content {
+            .footerContact__tel {
+              font-size: 1em;
+            }
+            .footerContact__mail {
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root {
+    .header {
+      font-size: 1.3em;
+      .sectionTop .sectionTop__wrap .sectionCurrency .sectionCurrency__wrap {
+        grid-column-gap: 40px;
+        .sectionCurrency__inner {
+          grid-column-gap: 40px;
+          .sectionCurrency__languages,
+          .sectionCurrency__currencies {
+            grid-column-gap: 10px;
+            .sectionCurrency__iconArrow {
+              width: 12px;
+              height: 8px;
+            }
+          }
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .sectionMiddle__wrapBusket {
+          grid-column-gap: 60px;
+          .linkBasket .linkBasket__counter {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .search {
+          height: 60px;
+          .search__form {
+            font-size: 1.1em;
+            .search__iconBox {
+              padding: 0;
+              display: grid;
+              justify-items: center;
+              .search__icon {
+                width: 28px;
+                height: 28px;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+      .sectionBottom {
+        padding: 35px 0;
+      }
+    }
+    .footer {
+      font-size: 1.3em;
+      .subscription {
+        .subscribe .subscribe__form {
+          height: 60px;
+        }
+        .socialMedia {
+          .socialMedia__iconFacebook {
+            width: 60px;
+            height: 60px;
+          }
+          .socialMedia__iconTwitter {
+            width: 30px;
+            height: 30px;
+          }
+          .socialMedia__iconPatreon {
+            width: 30px;
+            height: 30px;
+          }
+          .socialMedia__iconInstagram {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      .information
+        .information__wrap
+        .information__social
+        .information__iconsPayment {
+        .information__iconPay {
+          width: 50px;
+          height: 36px;
+        }
+        .information__iconSecurePayment {
+          width: 72px;
+          height: 36px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #root {
+    .header {
+      .sectionTop .sectionTop__wrap .address .address__box .address__iconPoint {
+        width: 30px;
+        height: 26px;
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .search .search__form .search__iconBox .search__icon {
+          width: 30px;
+          height: 30px;
+          padding: 0;
+        }
+        .logo .logo__icon {
+          width: 55px;
+          height: 50px;
+        }
+        .sectionMiddle__wrapBusket {
+          .linkWishlist .linkWishlist__icon {
+            width: 52px;
+            height: 42px;
+          }
+          .linkBasket {
+            .linkBasket__counter {
+              width: 30px;
+              height: 30px;
+              top: 1%;
+              left: 14%;
+            }
+            .linkBasket__icon {
+              width: 52px;
+              height: 42px;
+            }
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap {
+        .links {
+          font-size: 1.1em;
+        }
+        .sectionBottom__inner {
+          .sectionBottom__tel .sectionBottom__icon {
+            width: 38px;
+            height: 34px;
+          }
+          .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+            width: 40px;
+            height: 36px;
+          }
+        }
+      }
+    }
+    .footer {
+      .subscription {
+        .subscribe .subscribe__form {
+          height: 70px;
+          .subscribe__button {
+            border-radius: 30px;
+          }
+        }
+        .socialMedia {
+          grid-column-gap: 35px;
+          .socialMedia__iconFacebook {
+            width: 65px;
+            height: 65px;
+          }
+          .socialMedia__iconTwitter {
+            width: 35px;
+            height: 35px;
+          }
+          .socialMedia__iconPatreon {
+            width: 35px;
+            height: 35px;
+          }
+          .socialMedia__iconInstagram {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+      .information
+        .information__wrap
+        .information__info
+        .information__innerContact {
+        .footerContact .logo .logo__icon {
+          width: 55px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root {
+    .header {
+      font-size: 1.5em;
+      .sectionTop .sectionTop__wrap {
+        .sectionCurrency .sectionCurrency__wrap .sectionCurrency__inner {
+          .sectionCurrency__languages .sectionCurrency__iconArrow {
+            width: 16px;
+            height: 10px;
+          }
+          .sectionCurrency__currencies .sectionCurrency__iconArrow {
+            width: 16px;
+            height: 10px;
+          }
+        }
+        .address .address__box .address__iconPoint {
+          width: 36px;
+          height: 30px;
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .search .search__form {
+          height: 70px;
+        }
+        .logo .logo__icon {
+          width: 60px;
+          height: 55px;
+        }
+        .sectionMiddle__wrapBusket {
+          .linkBasket {
+            .linkBasket__counter {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap .sectionBottom__inner {
+        .sectionBottom__tel .sectionBottom__icon {
+          width: 40px;
+          height: 45px;
+        }
+        .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+          width: 45px;
+          height: 40px;
+        }
+      }
+    }
+    .footer {
+      font-size: 1.5em;
+      .subscription {
+        .subscribe .subscribe__form {
+          height: 80px;
+        }
+      }
+      .information .information__wrap {
+        .information__info .information__innerContact {
+          .footerContact .logo .logo__icon {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .information__social .information__iconsPayment {
+          .information__iconPay {
+            width: 60px;
+            height: 50px;
+          }
+          .information__iconSecurePayment {
+            width: 90px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3000px) {
+  #root {
+    .header {
+      font-size: 1.7em;
+      .sectionTop .sectionTop__wrap .sectionCurrency .sectionCurrency__wrap {
+        grid-column-gap: 60px;
+        .sectionCurrency__inner {
+          grid-column-gap: 60px;
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .sectionMiddle__wrapBusket {
+          .linkWishlist .linkWishlist__icon {
+            width: 65px;
+            height: 55px;
+          }
+          .linkBasket {
+            .linkBasket__counter {
+              top: 2%;
+              width: 40px;
+              height: 40px;
+            }
+            .linkBasket__icon {
+              width: 65px;
+              height: 55px;
+            }
+          }
+        }
+      }
+      .sectionBottom {
+        padding: 40px 0 40px 0;
+      }
+    }
+    .footer {
+      font-size: 1.7em;
+      .subscription {
+        .subscribe .subscribe__form {
+          height: 80px;
+        }
+      }
+      .information .information__wrap {
+        .information__info .information__innerContact {
+          .footerContact .logo .logo__icon {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .information__social .information__iconsPayment {
+          .information__iconPay {
+            width: 60px;
+            height: 50px;
+          }
+          .information__iconSecurePayment {
+            width: 90px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3300px) {
+  #root {
+    .header {
+      font-size: 2em;
+      .sectionTop .sectionTop__wrap .address .address__box .address__iconPoint {
+        width: 44px;
+        height: 40px;
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .search .search__form {
+          height: 80px;
+          .search__iconBox .search__icon {
+            width: 35px;
+            height: 35px;
+          }
+        }
+        .logo .logo__icon {
+          width: 70px;
+          height: 60px;
+        }
+        .sectionMiddle__wrapBusket {
+          .linkBasket {
+            .linkBasket__counter {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap .sectionBottom__inner {
+        .sectionBottom__tel .sectionBottom__icon {
+          width: 40px;
+          height: 45px;
+        }
+        .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+          width: 55px;
+          height: 50px;
+        }
+      }
+    }
+    .footer {
+      font-size: 1.9em;
+      .subscription {
+        .subscribe .subscribe__form {
+          height: 90px;
+          .subscribe__button {
+            border-radius: 40px;
+          }
+        }
+        .socialMedia {
+          .socialMedia__iconFacebook {
+            width: 80px;
+            height: 80px;
+          }
+          .socialMedia__iconTwitter {
+            width: 45px;
+            height: 45px;
+          }
+          .socialMedia__iconPatreon {
+            width: 45px;
+            height: 45px;
+          }
+          .socialMedia__iconInstagram {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+      .information .information__wrap {
+        .information__info .information__innerContact {
+          .footerContact .logo .logo__icon {
+            width: 70px;
+            height: 70px;
+          }
+        }
+        .information__social .information__iconsPayment {
+          .information__iconPay {
+            width: 80px;
+            height: 60px;
+          }
+          .information__iconSecurePayment {
+            width: 100px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3500px) {
+  #root {
+    .header {
+      .sectionTop .sectionTop__wrap {
+        .sectionCurrency .sectionCurrency__wrap .sectionCurrency__inner {
+          .sectionCurrency__languages .sectionCurrency__iconArrow {
+            width: 22px;
+            height: 20px;
+          }
+          .sectionCurrency__currencies .sectionCurrency__iconArrow {
+            width: 22px;
+            height: 20px;
+          }
+        }
+        .address .address__box .address__iconPoint {
+          width: 50px;
+          height: 46px;
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .search .search__form {
+          height: 95px;
+          .search__iconBox .search__icon {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .logo .logo__icon {
+          width: 90px;
+          height: 80px;
+        }
+        .sectionMiddle__wrapBusket {
+          .linkWishlist .linkWishlist__icon {
+            width: 80px;
+            height: 65px;
+          }
+          .linkBasket {
+            .linkBasket__icon {
+              width: 80px;
+              height: 65px;
+            }
+            .linkBasket__counter {
+              top: 0%;
+              width: 45px;
+              height: 45px;
+            }
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap .sectionBottom__inner {
+        .sectionBottom__tel .sectionBottom__icon {
+          width: 50px;
+          height: 45px;
+        }
+        .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+          width: 60px;
+          height: 55px;
+        }
+      }
+    }
+    .footer {
+      .subscription {
+        .subscribe .subscribe__form {
+          height: 110px;
+          .subscribe__button {
+            border-radius: 45px;
+          }
+        }
+        .socialMedia {
+          .socialMedia__iconFacebook {
+            width: 90px;
+            height: 90px;
+          }
+          .socialMedia__iconTwitter {
+            width: 50px;
+            height: 50px;
+          }
+          .socialMedia__iconPatreon {
+            width: 50px;
+            height: 50px;
+          }
+          .socialMedia__iconInstagram {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      .information .information__wrap {
+        .information__info .information__innerContact {
+          .footerContact .logo .logo__icon {
+            width: 90px;
+            height: 80px;
+          }
+        }
+        .information__social .information__iconsPayment {
+          .information__iconPay {
+            width: 90px;
+            height: 70px;
+          }
+          .information__iconSecurePayment {
+            width: 130px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root {
+    .header {
+      font-size: 2.2em;
+      .sectionTop .sectionTop__wrap {
+        .address .address__box .address__iconPoint {
+          width: 55px;
+          height: 50px;
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .search .search__form {
+          height: 100px;
+          .search__iconBox .search__icon {
+            width: 45px;
+            height: 45px;
+          }
+        }
+        .logo .logo__icon {
+          width: 100px;
+          height: 90px;
+        }
+        .sectionMiddle__wrapBusket {
+          .linkWishlist .linkWishlist__icon {
+            width: 85px;
+            height: 70px;
+          }
+          .linkBasket {
+            .linkBasket__icon {
+              width: 85px;
+              height: 70px;
+            }
+            .linkBasket__counter {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap .sectionBottom__inner {
+        .sectionBottom__tel .sectionBottom__icon {
+          width: 55px;
+          height: 50px;
+        }
+        .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+          width: 65px;
+          height: 60px;
+        }
+      }
+    }
+    .footer {
+      font-size: 2.1em;
+      .subscription {
+        .subscribe .subscribe__form {
+          height: 125px;
+          .subscribe__button {
+            border-radius: 55px;
+          }
+        }
+        .socialMedia {
+          grid-column-gap: 65px;
+          .socialMedia__iconFacebook {
+            width: 100px;
+            height: 100px;
+          }
+          .socialMedia__iconTwitter {
+            width: 55px;
+            height: 55px;
+          }
+          .socialMedia__iconPatreon {
+            width: 55px;
+            height: 55px;
+          }
+          .socialMedia__iconInstagram {
+            width: 55px;
+            height: 55px;
+          }
+        }
+      }
+      .information .information__wrap {
+        .information__info .information__innerContact {
+          .footerContact .logo .logo__icon {
+            width: 100px;
+            height: 90px;
+          }
+        }
+        .information__social .information__iconsPayment {
+          .information__iconPay {
+            width: 120px;
+            height: 80px;
+          }
+          .information__iconSecurePayment {
+            width: 160px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1800px) {
+  #root .footer .subscription {
+    grid-template-columns: 34.5% 48% 17.5%;
+  }
+}
+@media (max-width: 1600px) {
+  #root .footer .subscription {
+    grid-template-columns: 37% 45% 18%;
+  }
+}
+@media (max-width: 1450px) {
+  #root {
+    .footer {
+      font-size: 0.9rem;
+      .subscription .subscribe .subscribe__form {
+        height: 46px;
+      }
+    }
+    .header {
+      font-size: 0.9rem;
+      .sectionMiddle {
+        .sectionMiddle__wrap {
+          .search__form {
+            height: 40px;
+          }
+          .sectionMiddle__wrapBusket {
+            .linkBasket .linkBasket__counter {
+              top: 5%;
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root {
+    .header {
+      .sectionMiddle .sectionMiddle__wrap .search__form {
+        height: 36px;
+      }
+      .sectionBottom .sectionBottom__wrap .sectionBottom__inner {
+        .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+          width: 17px;
+          height: 20px;
+        }
+        .sectionBottom__icon {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .footer {
+      .subscription {
+        grid-template-columns: 38% 42% 20%;
+        .subscribe .subscribe__form {
+          height: 40px;
+        }
+      }
+      .information
+        .information__wrap
+        .information__social
+        .information__iconsPayment {
+        .information__iconPay {
+          width: 40px;
+          height: 30px;
+        }
+        .information__iconSecurePayment {
+          width: 60px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  #root {
+    .header {
+      .sectionTop .sectionTop__wrap .address .address__box {
+        width: 260px;
+        .address__iconPoint {
+          width: 13px;
+          height: 17px;
+        }
+      }
+    }
+    .footer .subscription .socialMedia {
+      .socialMedia__iconFacebook {
+        width: 30px;
+        height: 30px;
+      }
+      .socialMedia__iconTwitter {
+        width: 15px;
+        height: 15px;
+      }
+      .socialMedia__iconPatreon {
+        width: 15px;
+        height: 15px;
+      }
+      .socialMedia__iconInstagram {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #root {
+    .footer {
+      .information
+        .information__wrap
+        .information__social
+        .information__iconsPayment {
+        .information__iconPay {
+          width: 38px;
+          height: 28px;
+        }
+        .information__iconSecurePayment {
+          width: 56px;
+          height: 28px;
+        }
+      }
+      .subscription {
+        grid-template-columns: 40% 40% 20%;
+        .subscribe .subscribe__form {
+          font-size: 0.9em;
+          height: 36px;
+        }
+      }
+    }
+    .header {
+      .sectionTop .sectionTop__wrap .address .address__box .address__iconPoint {
+        width: 14px;
+        height: 17px;
+      }
+      .sectionBottom .sectionBottom__wrap .links {
+        width: 85%;
+        grid-column-gap: 10%;
+      }
+    }
+  }
+}
+@media (max-width: 1165px) {
+  #root .header .sectionBottom .sectionBottom__wrap .links {
+    width: 87%;
+    grid-column-gap: 9%;
+  }
+}
+@media (max-width: 1100px) {
+  #root {
+    .header {
+      .sectionTop .sectionTop__wrap .address .address__box .address__iconPoint {
+        width: 14px;
+        height: 16px;
+      }
+      .sectionBottom .sectionBottom__wrap .links {
+        width: 90%;
+        grid-column-gap: 8%;
+      }
+    }
+    .footer {
+      .information {
+        grid-template-columns: 44% 38% 18%;
+        .information__wrap {
+          .information__social .information__iconsPayment {
+            .information__iconPay {
+              width: 35px;
+              height: 26px;
+            }
+            .information__iconSecurePayment {
+              width: 50px;
+              height: 26px;
+            }
+          }
+          .information__info .information__innerNav {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  #root {
+    .header {
+      font-size: 1rem;
+      .sectionTop {
+        padding-top: 8px;
+        .sectionTop__wrap {
+          width: 95%;
+          .address .address__box {
+            width: 100%;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            align-items: center;
+            justify-content: start;
+            grid-column-gap: 10px;
+            .address__iconPoint {
+              width: 20px;
+              height: 18px;
+            }
+          }
+          .sectionCurrency .sectionCurrency__wrap {
+            font-size: 1.1em;
+            grid-column-gap: 15px;
+            .sectionCurrency__inner {
+              .sectionCurrency__languages .sectionCurrency__iconArrow {
+                width: 10px;
+                height: 9px;
+              }
+              .sectionCurrency__currencies .sectionCurrency__iconArrow {
+                width: 10px;
+                height: 9px;
+              }
+            }
+          }
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        width: 95%;
+        .search__form {
+          height: 38px;
+          .search__input::placeholder {
+            padding-left: 5px;
+          }
+          .search__iconBox {
+            padding-right: 10px;
+            .search__icon {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+        .sectionMiddle__wrapBusket {
+          .linkWishlist .linkWishlist__icon {
+            width: 28px;
+            height: 26px;
+          }
+          .linkBasket {
+            .linkBasket__counter {
+              width: 16px;
+              height: 16px;
+            }
+            .linkBasket__icon {
+              width: 28px;
+              height: 26px;
+            }
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap {
+        width: 95%;
+        .sectionBottom__inner {
+          .sectionBottom__icon {
+            width: 16px;
+            height: 16px;
+          }
+          .sectionBottom__linkAccountPage .sectionBottom__iconUser {
+            width: 16px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .footer {
+      font-size: 1.1rem;
+      .subscription {
+        grid-template-columns: 40% 40% 20%;
+        width: 95%;
+        .subscribe .subscribe__form {
+          height: 44px;
+          font-size: 0.9em;
+        }
+        .subscription__innerIcons {
+          .subscription__iconFacebook {
+            width: 34px;
+            height: 34px;
+          }
+          .subscription__iconTwitter {
+            width: 21px;
+            height: 19px;
+          }
+          .subscription__iconPatreon {
+            width: 19px;
+            height: 21px;
+          }
+          .subscription__iconInstagram {
+            width: 21px;
+            height: 21px;
+          }
+        }
+      }
+      .information .information__wrap {
+        width: 95%;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root {
+    .header {
+      .sectionMiddle
+        .sectionMiddle__wrap
+        .sectionMiddle__wrapBusket
+        .linkBasket {
+        grid-column-gap: 0;
+        .linkBasket__counter {
+          left: 52%;
+          top: -15%;
+        }
+        .linkBasket__inner {
+          display: none;
+        }
+      }
+      .sectionBottom .sectionBottom__wrap {
+        .links {
+          width: 100%;
+          grid-column-gap: 0%;
+        }
+        .sectionBottom__inner
+          .sectionBottom__linkAccountPage
+          .sectionBottom__iconUser {
+          width: 20px;
+          height: 32px;
+        }
+      }
+    }
+    .footer .subscription {
+      grid-template-columns: 32% 48% 20%;
+      .subscription__innerLeft {
+        font-size: 0.75em;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  #root {
+    .header .sectionBottom {
+      padding: 20px 0;
+    }
+    .footer {
+      .subscription {
+        grid-template-columns: 1fr 1.5fr 1fr;
+        .subscription__innerLeft {
+          font-size: 0.6em;
+          display: grid;
+          justify-items: start;
+          align-items: center;
+          .subscription__text {
+            display: none;
+          }
+        }
+        .subscribe .subscribe__form {
+          font-size: 0.8em;
+
+          .subscribe__button {
+            height: 35px;
+          }
+        }
+      }
+      .information .information__wrap .information__info {
+        justify-items: center;
+        margin-bottom: 100px;
+        grid-template-rows: 65% 75%;
+        grid-template-columns: auto;
+        .information__innerContact {
+          .footerContact {
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            .footerContact__title {
+              width: 80%;
+              margin-block: 2%;
+            }
+            .footerContact__content {
+              width: 50%;
+              justify-content: center;
+            }
+          }
+        }
+        .information__innerNav {
+          justify-items: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root {
+    .header {
+      grid-row-gap: 15px;
+      .sectionMiddle .sectionMiddle__wrap {
+        grid-template-columns: auto auto;
+        .logo {
+          display: none;
+        }
+        .search {
+          width: 100%;
+          justify-content: start;
+          .search__form {
+            font-size: 0.9em;
+            width: 350px;
+            display: grid;
+            grid-template-columns: 0.5fr 6fr 2fr;
+            grid-template-rows: auto;
+            align-items: center;
+            justify-items: start;
+            grid-column-gap: 7px;
+            .search__iconBox {
+              width: 100%;
+              display: grid;
+              align-items: center;
+              justify-content: start;
+              padding: 0;
+              svg {
+                padding: 0;
+              }
+            }
+            .search__input {
+              width: 100%;
+            }
+            .search__button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      .subscription {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+        justify-items: center;
+        .subscription__innerLeft {
+          grid-column: 1 / 4;
+          grid-row: 1 / 2;
+          grid-row-gap: 8px;
+          .subscription__title {
+            margin: 0;
+            padding: 0;
+          }
+          justify-items: center;
+          .subscription__text {
+            display: inline;
+            overflow: visible;
+          }
+        }
+        .subscribe {
+          grid-column: 1 / 3;
+          grid-row: 2 / 3;
+        }
+        .subscription__innerIcons {
+          grid-column: 3 / 4;
+          grid-row: 2 / 3;
+          width: 90%;
+          justify-content: space-between;
+        }
+      }
+      .information
+        .information__wrap
+        .information__social
+        .information__rights {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root {
+    .header {
+      .sectionTop {
+        .sectionTop__wrap {
+          grid-template-columns: auto;
+          grid-template-rows: auto;
+          .address {
+            display: none;
+          }
+          .sectionCurrency {
+            width: 100%;
+            justify-items: center;
+            .sectionCurrency__wrap {
+              grid-column-gap: 0;
+              width: 100%;
+              justify-content: space-between;
+              grid-template-columns: auto auto;
+              grid-template-rows: auto;
+              .sectionCurrency__inner {
+                grid-column-gap: 20px;
+              }
+            }
+          }
+        }
+      }
+      .sectionMiddle {
+        .sectionMiddle__wrap .search {
+          width: 300px;
+          .search__form {
+            width: 300px;
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap {
+        grid-template-columns: 70% 30%;
+        .sectionBottom__inner {
+          grid-column-gap: 0;
+          .sectionBottom__icon {
+            display: none;
+          }
+          .sectionBottom__tel {
+            display: none;
+          }
+        }
+      }
+    }
+    .footer .subscription .subscription__innerLeft .subscription__text {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 550px) {
+  #root {
+    .header .sectionBottom .sectionBottom__wrap {
+      grid-template-columns: 90% 10%;
+    }
+    .footer {
+      .subscription .subscribe .subscribe__form {
+        height: 38px;
+        font-size: 0.8em;
+      }
+      .information .information__wrap {
+        .information__info {
+          margin-bottom: 10%;
+          grid-template-rows: auto auto;
+          .information__innerContact {
+            margin-bottom: 5%;
+            .footerContact .footerContact__title {
+              width: 95%;
+            }
+          }
+          .information__innerNav {
+            width: 100%;
+            grid-row-gap: 35px;
+            grid-column-gap: 15px;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto auto;
+            .information__accountSection {
+              grid-template-columns: auto auto;
+              grid-template-rows: auto;
+              justify-items: center;
+              align-items: center;
+              grid-row-gap: 15px;
+              width: 100%;
+              grid-row: 1 / 2;
+              grid-column: 1 / 2;
+              a {
+                order: 1;
+              }
+            }
+            .information__helpsSection {
+              grid-template-columns: auto auto;
+              grid-template-rows: auto;
+              justify-items: center;
+              align-items: center;
+              grid-row-gap: 15px;
+              width: 100%;
+              grid-row: 1 / 2;
+              grid-column: 2 / 3;
+            }
+            .information__proxySection {
+              grid-template-columns: auto auto;
+              grid-template-rows: auto;
+              justify-items: center;
+              align-items: center;
+              grid-row-gap: 15px;
+              width: 100%;
+              grid-row: 2 / 3;
+              grid-column: 1 / 2;
+            }
+            .information__categoriesLink {
+              grid-template-columns: auto auto;
+              grid-template-rows: auto;
+              justify-items: center;
+              align-items: center;
+              grid-row-gap: 15px;
+              width: 100%;
+              grid-row: 2 / 3;
+              grid-column: 2 / 3;
+            }
+          }
+        }
+        .information__social {
+          grid-template-columns: 50% 35%;
+          justify-content: space-between;
+          .information__iconsPayment {
+            width: 100%;
+            .information__iconPay {
+              width: 28px;
+              height: 22px;
+            }
+            .information__iconSecurePayment {
+              width: 42px;
+              height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root {
+    .header .sectionMiddle .sectionMiddle__wrap .search .search__form {
+      height: 34px;
+    }
+
+    .footer {
+      .subscription {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: auto;
+        .subscription__innerLeft {
+          grid-row: 1 / 2;
+          grid-column: 1 / 2;
+        }
+        .subscribe {
+          width: 100%;
+          font-size: 0.9em;
+          grid-row: 2 / 3;
+          grid-column: 1 / 2;
+          .subscription__form {
+            width: 100%;
+          }
+        }
+      }
+      .information .information__wrap .information__info {
+        margin-bottom: 5%;
+        .information__innerContact {
+          margin-bottom: 9%;
+          .footerContact .footerContact__content {
+            width: 80%;
+          }
+        }
+        .information__innerNav {
+          width: 80%;
+          grid-template-rows: repeat(4, auto);
+          grid-template-columns: auto;
+          grid-row-gap: 40px;
+          .information__accountSection {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+          }
+          .information__helpsSection {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+          }
+          .information__proxySection {
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+          }
+          .information__categoriesLink {
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  #root {
+    .header .sectionMiddle .sectionMiddle__wrap {
+      .search {
+        width: auto;
+        .search__form {
+          height: 32px;
+          width: 260px;
+        }
+      }
+    }
+    .footer .information .information__wrap {
+      .information__info
+        .information__innerContact
+        .footerContact
+        .footerContact__title {
+        width: 95%;
+      }
+      .information__social {
+        grid-template-columns: 55% 45%;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root {
+    .header .sectionMiddle .sectionMiddle__wrap {
+      .search .search__form {
+        width: 220px;
+      }
+      .sectionMiddle__wrapBusket {
+        grid-column-gap: 25px;
+      }
+    }
+    .footer {
+      .subscription {
+        grid-row-gap: 10px;
+      }
+      .information .information__wrap {
+        .information__social {
+          grid-template-columns: 50% 45%;
+          grid-column-gap: 10px;
+          .information__iconsPayment {
+            .information__iconPay {
+              width: 24px;
+              height: 20px;
+            }
+            .information__iconSecurePayment {
+              width: 28px;
+              height: 20px;
+            }
+          }
+        }
+        .information__info {
+          .information__innerContact .footerContact .footerContact__title {
+            font-size: 0.7em;
+          }
+          .information__innerNav {
+            grid-row-gap: 30px;
+            .information__accountSection {
+              grid-row-gap: 8px;
+            }
+            .information__helpsSection {
+              grid-row-gap: 8px;
+            }
+            .information__proxySection {
+              grid-row-gap: 8px;
+            }
+            .information__categoriesLink {
+              grid-row-gap: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 340px) {
+  #root {
+    .header {
+      .sectionMiddle .sectionMiddle__wrap .search .search__form {
+        width: 190px;
+        height: 30px;
+        .search__button {
+          width: 120%;
+        }
+      }
+      .sectionBottom .sectionBottom__wrap {
+        grid-template-columns: 95% 5%;
+        .links {
+          font-size: 0.9em;
+        }
+      }
+    }
+    .footer .information .information__wrap .information__info {
+      .information__innerContact .footerContact .footerContact__content {
+        width: 100%;
+      }
+      .information__innerNav {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (hover: hover) {
+  #root {
+    .header {
+      .sectionTop .sectionTop__wrap .sectionCurrency .sectionCurrency__wrap {
+        .sectionCurrency__authorizate:hover {
+          transform: scale(1.2);
+        }
+        .sectionCurrency__inner {
+          .sectionCurrency__languages:hover {
+            .sectionCurrency__language {
+              transform: scale(1.25);
+              color: $light-green;
+            }
+            .sectionCurrency__iconArrow {
+              transform: scale(1.25);
+              stroke: $light-green;
+            }
+          }
+          .sectionCurrency__currencies:hover {
+            .sectionCurrency__currency {
+              transform: scale(1.25);
+              color: $light-green;
+            }
+            .sectionCurrency__iconArrow {
+              transform: scale(1.25);
+              stroke: $light-green;
+            }
+          }
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .search .search__form .search__button:hover {
+          background-color: #1a1a1a;
+          transform: scale(1.05);
+        }
+        .sectionMiddle__wrapBusket {
+          .linkBasket:hover {
+            .linkBasket__counter {
+              transform: scale(1.1);
+            }
+            .linkBasket__icon {
+              transform: scale(1.1);
+            }
+            .linkBasket__inner {
+              .linkBasket__title {
+                transform: scale(1.1);
+              }
+              .linkBasket__price {
+                transform: scale(1.1);
+              }
+            }
+          }
+          .linkWishlist .linkWishlist__icon:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap {
+        .links li:hover {
+          transform: scale(1.2);
+        }
+        .sectionBottom__inner {
+          .sectionBottom__tel:hover {
+            transform: scale(1.1);
+            .sectionBottom__icon {
+              transform: scale(1.1);
+            }
+          }
+          .sectionBottom__linkAccountPage:hover {
+            .sectionBottom__iconUser {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      .subscription {
+        .subscribe .subscribe__form .subscribe__button:hover {
+          transform: scale(1.1);
+          background-color: #1a1a1a;
+        }
+        .socialMedia {
+          a:hover {
+            .socialMedia__iconFacebook {
+              transform: scale(1.2);
+            }
+            .socialMedia__iconTwitter {
+              transform: scale(1.2);
+            }
+            .socialMedia__iconPatreon {
+              transform: scale(1.2);
+            }
+            .socialMedia__iconInstagram {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      .information .information__wrap .information__info {
+        .information__innerContact .footerContact .footerContact__content {
+          .footerContact__tel:hover {
+            transform: scale(1.1);
+          }
+          .footerContact__mail:hover {
+            transform: scale(1.1);
+          }
+        }
+        .information__innerNav {
+          .information__accountSection a:hover {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+          .information__helpsSection a:hover {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+          .information__proxySection a:hover {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+          .information__categoriesLink .information__categoriesLinkName:hover {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root {
+    .header {
+      .sectionTop .sectionTop__wrap .sectionCurrency .sectionCurrency__wrap {
+        .sectionCurrency__authorizate:active {
+          transform: scale(1.2);
+        }
+        .sectionCurrency__inner {
+          .sectionCurrency__languages:active {
+            .sectionCurrency__language {
+              transform: scale(1.25);
+              color: $light-green;
+            }
+            .sectionCurrency__iconArrow {
+              transform: scale(1.25);
+              stroke: $light-green;
+            }
+          }
+          .sectionCurrency__currencies:active {
+            .sectionCurrency__currency {
+              transform: scale(1.25);
+              color: $light-green;
+            }
+            .sectionCurrency__iconArrow {
+              transform: scale(1.25);
+              stroke: $light-green;
+            }
+          }
+        }
+      }
+      .sectionMiddle .sectionMiddle__wrap {
+        .search .search__form .search__button:active {
+          background-color: #1a1a1a;
+          transform: scale(1.05);
+        }
+        .sectionMiddle__wrapBusket {
+          .linkBasket:active {
+            .linkBasket__counter {
+              transform: scale(1.1);
+            }
+            .linkBasket__icon {
+              transform: scale(1.1);
+            }
+            .linkBasket__inner {
+              .linkBasket__title {
+                transform: scale(1.1);
+              }
+              .linkBasket__price {
+                transform: scale(1.1);
+              }
+            }
+          }
+          .linkWishlist .linkWishlist__icon:active {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .sectionBottom .sectionBottom__wrap {
+        .links li:active {
+          transform: scale(1.2);
+        }
+        .sectionBottom__inner {
+          .sectionBottom__tel:active {
+            transform: scale(1.1);
+            .sectionBottom__icon {
+              transform: scale(1.1);
+            }
+          }
+          .sectionBottom__linkAccountPage:active {
+            .sectionBottom__iconUser {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      .subscription {
+        .subscribe .subscribe__form .subscribe__button:active {
+          transform: scale(1.1);
+          background-color: #1a1a1a;
+        }
+        .socialMedia {
+          a:active {
+            .socialMedia__iconFacebook {
+              transform: scale(1.2);
+            }
+            .socialMedia__iconTwitter {
+              transform: scale(1.2);
+            }
+            .socialMedia__iconPatreon {
+              transform: scale(1.2);
+            }
+            .socialMedia__iconInstagram {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      .information .information__wrap .information__info {
+        .information__innerContact .footerContact .footerContact__content {
+          .footerContact__tel:active {
+            transform: scale(1.1);
+          }
+          .footerContact__mail:active {
+            transform: scale(1.1);
+          }
+        }
+        .information__innerNav {
+          .information__accountSection a:active {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+          .information__helpsSection a:active {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+          .information__proxySection a:active {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+          .information__categoriesLink .information__categoriesLinkName:active {
+            color: white;
+            opacity: 0.6;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

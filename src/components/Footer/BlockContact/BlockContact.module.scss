@@ -1,0 +1,39 @@
+@import "@styles/variables.module.scss";
+
+.footerContact {
+  width: 95%;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  .footerContact__title {
+    margin-top: 4.76%;
+    margin-bottom: 6.54%;
+    color: #808080;
+    font-size: 0.87em;
+    font-weight: 400;
+  }
+  .footerContact__content {
+    font-size: 0.875em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    color: #808080;
+    align-items: center;
+    grid-column-gap: 10px;
+    justify-content: start;
+    .footerContact__tel {
+      transition: all 0.3s;
+      font-size: 0.875em;
+      color: white;
+      -webkit-text-decoration: underline 2px solid $light-green;
+      text-decoration: underline 2px solid $light-green;
+      text-underline-position: under;
+    }
+  }
+  .footerContact__mail {
+    transition: all 0.3s;
+    font-size: 0.875em;
+    color: white;
+    -webkit-text-decoration: underline 2px solid $light-green;
+    text-decoration: underline 2px solid $light-green;
+    text-underline-position: under;
+  }
+}

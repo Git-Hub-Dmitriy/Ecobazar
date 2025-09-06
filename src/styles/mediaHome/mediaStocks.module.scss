@@ -1,0 +1,156 @@
+@media (hover: hover) {
+  #root .stocks .stocks__section {
+    .btnShop:hover {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      color: #ffffff;
+      .btnShop__arrow {
+        stroke: #ffffff;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .stocks .stocks__section {
+    .btnShop:active {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      color: #ffffff;
+      .btnShop__arrow {
+        stroke: #ffffff;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .stocks .btnShop {
+    height: 60px;
+    .btnShop__arrow {
+      width: 22px;
+      height: 16px;
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #root .stocks .btnShop {
+    height: 70px;
+    .btnShop__arrow {
+      width: 26px;
+      height: 20px;
+    }
+  }
+}
+@media (min-width: 2800px) {
+  #root .stocks .btnShop {
+    height: 80px;
+  }
+}
+@media (min-width: 3100px) {
+  #root .stocks .btnShop {
+    left: 28%;
+    height: 100px;
+    width: 45%;
+    .btnShop__arrow {
+      width: 30px;
+      height: 26px;
+    }
+  }
+}
+@media (min-width: 3300px) {
+  #root .stocks .btnShop {
+    height: 110px;
+  }
+}
+@media (min-width: 3700px) {
+  #root .stocks .btnShop {
+    height: 120px;
+    .btnShop__arrow {
+      width: 34px;
+      height: 30px;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  #root .stocks {
+    grid-column-gap: 15px;
+    font-size: 0.9em;
+    .stocks__section .btnShop {
+      height: 40px;
+      grid-column-gap: 8px;
+      .btnShop__arrow {
+        width: 12px;
+        height: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  #root .stocks {
+    font-size: 0.8em;
+    .stocks__section .btnShop {
+      height: 35px;
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  #root .stocks {
+    width: 95%;
+  }
+}
+@media (max-width: 800px) {
+  #root .stocks .stocks__section .btnShop {
+    width: 50%;
+    left: 25%;
+    grid-column-gap: 8px;
+    .btnShop__arrow {
+      width: 10px;
+      height: 8px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  #root .stocks {
+    font-size: 0.7em;
+    padding-bottom: 20px;
+    .stocks__section .btnShop {
+      width: 50%;
+      height: 30px;
+      grid-column-gap: 6px;
+      .btnShop__arrow {
+        width: 10px;
+        height: 8px;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  #root .stocks {
+    grid-column-gap: 6px;
+    .stocks__section .btnShop {
+      height: 28px;
+      grid-column-gap: 0px;
+      .btnShop__arrow {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root .stocks {
+    width: 60%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    .stocks__section .btnShop {
+      height: 35px;
+      grid-column-gap: 10px;
+      .btnShop__arrow {
+        display: block;
+      }
+    }
+  }
+}

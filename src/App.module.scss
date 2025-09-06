@@ -1,0 +1,68 @@
+@import "@styles/nullStyle.module.scss";
+@import "@styles/mediaComponents/mediaComponents.module.scss";
+@import "@styles/mediaHeaderFooter.module.scss";
+@import "@styles/mediaBtnScrollUp.module.scss";
+@import "@styles/mediaReviewProduct.module.scss";
+@import "@styles/mediaCompaniesLogo.module.scss";
+@import "@styles/mediaCarousel.module.scss";
+@import "@styles/mediaTestimonials.module.scss";
+@import "@styles/mediaAddedCart.module.scss";
+@import "@styles/mediaHome/mediaHome.module.scss";
+@import "@styles/mediaHome/mediaBanners.module.scss";
+@import "@styles/mediaHome/mediaFeaturesStore.module.scss";
+@import "@styles/mediaHome/mediaPopularCategories.module.scss";
+@import "@styles/mediaHome/mediaPopularProducts.module.scss";
+@import "@styles/mediaHome/mediaStocks.module.scss";
+@import "@styles/mediaHome/mediaHoDeals.module.scss";
+@import "@styles/mediaHome/mediaAdvertising.module.scss";
+@import "@styles/mediaHome/mediaFeaturedProducts.module.scss";
+@import "@styles/mediaHome/mediaLatestNews.module.scss";
+@import "@styles/mediaHome/mediaSectionInstagram.module.scss";
+@import "@styles/mediaShop/mediaShop.module.scss";
+@import "@styles/mediaShop/mediaFiltersProduct.module.scss";
+@import "@styles/mediaShop/mediaListProducts.module.scss";
+@import "@styles/mediaProduct/mediaProduct.module.scss";
+@import "@styles/mediaProduct/mediaInfoProduct.module.scss";
+@import "@styles/mediaProduct/mediaRelatedProducts.module.scss";
+@import "@styles/mediaProduct/mediaSliderImage.module.scss";
+@import "@styles/mediaNotFoundPage/mediaNotFoundPage.module.scss";
+@import "@styles/mediaFaqs/mediaFaqs.module.scss";
+@import "@styles/mediaContact/mediaContact.module.scss";
+@import "@styles/mediaAbout/mediaAbout.module.scss";
+@import "@styles/mediaAbout/mediaSectionTeam.module.scss";
+@import "@styles/mediaAbout/mediaDescription.module.scss";
+@import "@styles/mediaAbout/mediaSectionFeatures.module.scss";
+@import "@styles/mediaAbout/mediaSectionDeliver.module.scss";
+@import "@styles/mediaBlog/mediaBlog.module.scss";
+@import "@styles/mediaBlog/mediaBlogCategories.module.scss";
+@import "@styles/mediaBlog/mediaBlogRecentlyAdded.module.scss";
+@import "@styles/mediaSinglePost/mediaSinglePost.module.scss";
+@import "@styles/mediaSinglePost/mediaPostTags.module.scss";
+@import "@styles/mediaSinglePost/mediaPostSearch.module.scss";
+@import "@styles/mediaSinglePost/mediaPostRecentlyAdded.module.scss";
+@import "@styles/mediaSinglePost/mediaPostInfo.module.scss";
+@import "@styles/mediaSinglePost/mediaPostGallery.module.scss";
+@import "@styles/mediaSinglePost/mediaPostCategories.module.scss";
+@import "@styles/mediaLogin/mediaLogin.module.scss";
+@import "@styles/mediaRegister/mediaRegister.module.scss";
+@import "@styles/mediaAccount/mediaAccount.module.scss";
+@import "@styles/mediaAccount/mediaDashboard.module.scss";
+@import "@styles/mediaAccount/mediaOrderHistory.module.scss";
+@import "@styles/mediaAccount/mediaSettings.module.scss";
+@import "@styles/mediaAccount/mediaShoppingCart.module.scss";
+@import "@styles/mediaAccount/mediaSingleOrder.module.scss";
+@import "@styles/mediaAccount/mediaWishlist.module.scss";
+@import "@styles/mediaAccount/mediaNav.module.scss";
+@import "@styles/mediaShoppingCart/mediaShoppingCart.module.scss";
+// Компоненты в home и about уже сделаны хорошо, и все стили поправлены
+// вынести логику в переменные на всех компонентах
+// Если будет время, отделить все медиа стили в отдельные файлы в правильном написании для каждого компонента
+// Переподключить все файлы медиа стилей в главный файл страницы а его уже в app style
+// ShoppingCart уже правильно подключен и изменен с ширинами media
+// Переделать все стили с 1000px на 1200px и с 760px на 850px
+// сделать русский язык
+// сделать форму поиска
+// сделать авторизацию и скрытие иконки аккаунта,
+// и изменение данных юзера в кабинете
+// сделать wishlist
+// пределать starsRating на звезды от юзеров из feedback для продуктов

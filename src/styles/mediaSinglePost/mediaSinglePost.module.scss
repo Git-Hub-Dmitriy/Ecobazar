@@ -1,0 +1,207 @@
+@media (hover: hover) {
+  #root .singlePost {
+    .singlePost__container .postInfo__wrapPost {
+      .editor .postInfo__innerSocial .postInfo__social:hover {
+        .postInfo__iconSocial {
+          transform: scale(1.2);
+        }
+      }
+      .postInfo__advertising .btnShop:hover {
+        transform: scale(1.1);
+        background-color: #1a1a1a;
+      }
+      .sectionComments {
+        .sectionComments__btn:hover {
+          transform: scale(1.1);
+        }
+        .sectionComments__wrapForm
+          .sectionComments__form
+          .sectionComments__btnComment:hover {
+          transform: scale(1.1);
+          background-color: #1a1a1a;
+        }
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .singlePost {
+    .singlePost__container .postInfo__wrapPost {
+      .editor .postInfo__innerSocial .postInfo__social:active {
+        .postInfo__iconSocial {
+          transform: scale(1.2);
+        }
+      }
+      .postInfo__advertising .btnShop:active {
+        transform: scale(1.1);
+        background-color: #1a1a1a;
+      }
+      .sectionComments {
+        .sectionComments__btn:active {
+          transform: scale(1.1);
+        }
+        .sectionComments__wrapForm
+          .sectionComments__form
+          .sectionComments__btnComment:active {
+          transform: scale(1.1);
+          background-color: #1a1a1a;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .singlePost {
+    font-size: 1.2em;
+    .navigate {
+      height: 140px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 20px;
+          height: 21px;
+        }
+        .navigate__iconArrow {
+          width: 12px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .singlePost {
+    font-size: 1.4em;
+    .navigate {
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 24px;
+          height: 24px;
+        }
+        .navigate__iconArrow {
+          width: 16px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .singlePost {
+    font-size: 1.6em;
+    .navigate {
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 30px;
+          height: 30px;
+        }
+        .navigate__iconArrow {
+          width: 18px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .singlePost {
+    font-size: 1.8em;
+    .navigate {
+      height: 160px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 34px;
+          height: 34px;
+        }
+        .navigate__iconArrow {
+          width: 20px;
+          height: 18px;
+        }
+      }
+    }
+    .singlePost__container .singlePost__nav {
+      grid-row-gap: 60px;
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .singlePost {
+    font-size: 2em;
+    .navigate {
+      height: 180px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 36px;
+          height: 36px;
+        }
+        .navigate__iconArrow {
+          width: 22px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .singlePost {
+    font-size: 2.2em;
+    .navigate {
+      height: 240px;
+      .navigate__wrap {
+        .navigate__linkHome .navigate__iconHouse {
+          width: 40px;
+          height: 40px;
+        }
+        .navigate__iconArrow {
+          width: 26px;
+          height: 22px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root .singlePost {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 1500px) {
+  #root .singlePost .singlePost__container .singlePost__nav {
+    grid-row-gap: 35px;
+  }
+}
+@media (max-width: 1300px) {
+  #root .singlePost {
+    .navigate {
+      height: 100px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  #root .singlePost {
+    .navigate {
+      height: 90px;
+      .navigate__wrap {
+        width: 95%;
+      }
+    }
+    .singlePost__container {
+      width: 95%;
+    }
+  }
+}
+@media (max-width: 760px) {
+  #root .singlePost {
+    .singlePost__container {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-column-gap: 0;
+      grid-row-gap: 25px;
+      .postInfo__wrapPost {
+        order: 2;
+      }
+      .singlePost__nav {
+        grid-row-gap: 30px;
+      }
+    }
+  }
+}

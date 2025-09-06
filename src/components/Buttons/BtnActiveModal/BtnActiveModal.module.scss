@@ -1,0 +1,9 @@
+.btnActiveModal {
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  .btnActiveModal__icon {
+    transition: all 0.3s;
+  }
+}

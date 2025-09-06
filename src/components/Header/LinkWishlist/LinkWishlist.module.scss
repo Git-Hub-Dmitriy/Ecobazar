@@ -1,0 +1,11 @@
+.linkWishlist {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  cursor: pointer;
+  .linkWishlist__icon {
+    transition: all 0.3s;
+    width: 28px;
+    height: 24px;
+  }
+}

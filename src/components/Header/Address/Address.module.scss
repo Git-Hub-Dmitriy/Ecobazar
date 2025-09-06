@@ -1,0 +1,26 @@
+@import "@styles/variables.module.scss";
+
+.address {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  width: 100%;
+  .address__box {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    width: 100%;
+    .address__iconPoint {
+      width: 15px;
+      height: 18px;
+    }
+    .address__text {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      margin-left: 2.79%;
+      font-size: 0.75em;
+      color: $gray;
+    }
+  }
+}
