@@ -3,41 +3,64 @@ import IconBasket from "@assets/iconBasket.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { resetProduct } from "@store/reducers/amountProductSlice";
 import { addShoppingCart } from "@store/reducers/shoppingCartSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import classNames from "classnames";
 
 export default function BtnAddBasket({ activeCard, product }) {
   const dispatch = useDispatch();
   const amountProduct = useSelector((store) => store.counter.value);
   const shopping = useSelector((store) => store.shoppingCart.shoppingCart);
   const found = shopping.find((item) => item.id === product.id);
-  const [state, setState] = useState(null);
+  const [modal, setModal] = useState({
+    active: false,
+    message: null,
+  });
 
-  function g() {
-    switch (state) {
-      case true: {
-        return "Уже добавлен";
-      }
-      case false: {
-        return "добавлен";
-      }
-      default: {
-        return false;
-      }
+  useEffect(() => {
+    if (modal.active === true) {
+      document.body.addEventListener(
+        "keydown",
+        function (event) {
+          console.log("Сработало");
+          if (event.code === "Escape") {
+            setModal({
+              active: false,
+              message: null,
+            });
+          }
+          return;
+        },
+        { once: true }
+      );
     }
-  }
+  }, [modal.active]);
 
   return (
     <>
       <button
         onClick={() => {
-          dispatch(
-            addShoppingCart({ product: product, amount: amountProduct })
-          );
-          dispatch(resetProduct(1));
-          if (found) {
-            setState(true);
+          if (!found) {
+            if (product.inStock === true) {
+              setModal({
+                active: true,
+                message: "This product added in your shopping cart",
+              });
+              dispatch(
+                addShoppingCart({ product: product, amount: amountProduct })
+              );
+              dispatch(resetProduct(1));
+            } else {
+              setModal({
+                active: true,
+                message: "Sorry, this product ended",
+              });
+            }
           } else {
-            setState(false);
+            setModal({
+              active: true,
+              message:
+                "this product already has been added in your shopping cart",
+            });
           }
         }}
         className={style.btnAddBasket}
@@ -47,8 +70,31 @@ export default function BtnAddBasket({ activeCard, product }) {
           className={style.btnAddBasket__icon}
           stroke={activeCard === product?.id ? "#ffffff" : "#1a1a1a"}
         />
-        <div style={{ fontSize: "2em", color: "black" }}>{g()}</div>
       </button>
+      <div
+        className={
+          modal.active
+            ? classNames(style.btnModal, style.active)
+            : style.btnModal
+        }
+        onClick={() =>
+          setModal({
+            active: false,
+            message: null,
+          })
+        }
+      >
+        <div
+          className={
+            modal.active
+              ? classNames(style.btnModal__content, style.active)
+              : style.btnModal__content
+          }
+          onClick={(e) => e.stopPropagation()}
+        >
+          {modal.message}
+        </div>
+      </div>
     </>
   );
 }
