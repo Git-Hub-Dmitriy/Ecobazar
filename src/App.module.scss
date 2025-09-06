@@ -6,7 +6,6 @@
 @import "@styles/mediaCompaniesLogo.module.scss";
 @import "@styles/mediaCarousel.module.scss";
 @import "@styles/mediaTestimonials.module.scss";
-@import "@styles/mediaAddedCart.module.scss";
 @import "@styles/mediaHome/mediaHome.module.scss";
 @import "@styles/mediaHome/mediaBanners.module.scss";
 @import "@styles/mediaHome/mediaFeaturesStore.module.scss";
@@ -54,11 +53,13 @@
 @import "@styles/mediaAccount/mediaWishlist.module.scss";
 @import "@styles/mediaAccount/mediaNav.module.scss";
 @import "@styles/mediaShoppingCart/mediaShoppingCart.module.scss";
+@import "@styles/mediaWishlist/mediaWishlist.module.scss";
 // Компоненты в home и about уже сделаны хорошо, и все стили поправлены
 // вынести логику в переменные на всех компонентах
 // Если будет время, отделить все медиа стили в отдельные файлы в правильном написании для каждого компонента
 // Переподключить все файлы медиа стилей в главный файл страницы а его уже в app style
-// ShoppingCart уже правильно подключен и изменен с ширинами media
+// убрать стили navigate и socialMedia из других компонентов
+// ShoppingCart Wishlist Navigate SocialMedia готовы
 // Переделать все стили с 1000px на 1200px и с 760px на 850px
 // сделать русский язык
 // сделать форму поиска
