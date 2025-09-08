@@ -73,6 +73,8 @@
           font-weight: 500;
           text-align: start;
           line-height: 150%;
+          transition: 0.3s;
+          cursor: pointer;
         }
       }
     }
@@ -90,5 +92,6 @@
     font-size: 1em;
     font-weight: bold;
     line-height: 120%;
+    transition: 0.3s;
   }
 }

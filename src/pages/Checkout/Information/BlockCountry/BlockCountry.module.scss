@@ -2,9 +2,9 @@
 .blockCountry {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 31.8%);
+  grid-template-columns: repeat(3, 32%);
   grid-template-rows: auto;
-  grid-column-gap: 16px;
+  grid-column-gap: 2%;
   justify-items: center;
   align-items: center;
   .blockCountry__wrapList {
@@ -41,15 +41,17 @@
         width: 100%;
         box-sizing: border-box;
         padding: 5px;
-        display: grid;
-        justify-items: start;
-        align-items: center;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         transition: all 0.3s;
         color: #999999;
         font-size: 1em;
         line-height: 130%;
         font-weight: 500;
         user-select: none;
+        text-align: start;
       }
       .blockCountry__list {
         width: 100%;
@@ -95,6 +97,7 @@
         align-items: center;
         stroke: #999999;
         cursor: pointer;
+        transition: all 0.3s;
       }
     }
   }

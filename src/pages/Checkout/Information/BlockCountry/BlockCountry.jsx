@@ -33,7 +33,16 @@ export default function BlockCountry({
           <li className={style.blockCountry__selected}>
             {statesCheckout.selectedCountry}
           </li>
-          <IconArrowDown className={style.blockCountry__iconArrow} />
+          <IconArrowDown
+            style={{
+              transform: `${
+                visibleLists.visibleCountries === true
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)"
+              }`,
+            }}
+            className={style.blockCountry__iconArrow}
+          />
           <ul
             className={
               visibleLists.visibleCountries !== true
@@ -82,7 +91,16 @@ export default function BlockCountry({
           <li className={style.blockCountry__selected}>
             {statesCheckout.selectedCity}
           </li>
-          <IconArrowDown className={style.blockCountry__iconArrow} />
+          <IconArrowDown
+            style={{
+              transform: `${
+                visibleLists.visibleCities === true
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)"
+              }`,
+            }}
+            className={style.blockCountry__iconArrow}
+          />
           <ul
             className={
               visibleLists.visibleCities !== true

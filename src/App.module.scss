@@ -54,13 +54,13 @@
 @import "@styles/mediaAccount/mediaNav.module.scss";
 @import "@styles/mediaShoppingCart/mediaShoppingCart.module.scss";
 @import "@styles/mediaWishlist/mediaWishlist.module.scss";
+@import "@styles/mediaCheckout/mediaCheckout.module.scss";
 // Компоненты в home и about уже сделаны хорошо, и все стили поправлены
 // вынести логику в переменные на всех компонентах
 // Если будет время, отделить все медиа стили в отдельные файлы в правильном написании для каждого компонента
 // Переподключить все файлы медиа стилей в главный файл страницы а его уже в app style
 // убрать стили navigate и socialMedia из других компонентов
-// ShoppingCart Wishlist Navigate SocialMedia готовы
-// Переделать все стили с 1000px на 1200px и с 760px на 850px
+// ShoppingCart Checkout Wishlist Navigate SocialMedia готовы
 // сделать русский язык
 // сделать форму поиска
 // сделать авторизацию и скрытие иконки аккаунта,
