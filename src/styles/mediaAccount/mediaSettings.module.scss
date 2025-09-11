@@ -367,37 +367,15 @@
     }
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   #root .account .settings {
-    .sectionUser
-      .sectionUser__wrapForm
-      .sectionUser__form
-      .sectionUser__changeNameBtn {
-      width: 35%;
-    }
-    .sectionAddress .sectionAddress__form {
-      .sectionAddress__btnSaveAddress {
-        width: 22.8%;
-      }
-      .choiceCountry__containerGrid {
-        grid-template-columns: repeat(3, 32.5%);
-        grid-column-gap: 1%;
-      }
+    .sectionAddress .sectionAddress__form .changeName__wrapName {
+      grid-template-columns: repeat(3, 32%);
+      grid-column-gap: 2%;
     }
     .sectionPass .sectionPass__form .sectionPass__btnSavePass {
-      width: 22.8%;
+      width: 25%;
     }
-  }
-}
-@media (max-width: 760px) {
-  #root
-    .account
-    .settings
-    .sectionAddress
-    .sectionAddress__form
-    .changeName__wrapName {
-    grid-template-columns: repeat(3, 32%);
-    grid-column-gap: 2%;
   }
 }
 @media (max-width: 600px) {

@@ -34,8 +34,8 @@
   #root .socialMedia {
     grid-column-gap: 40px;
     .socialMedia__iconFacebook {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
     }
     .socialMedia__iconTwitter {
       width: 25px;
@@ -114,8 +114,13 @@
     }
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   #root .socialMedia {
-    grid-column-gap: 40px;
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  #root .socialMedia {
+    width: 100%;
   }
 }

@@ -4,6 +4,7 @@ export default function Subscribe() {
   return (
     <div className={style.subscribe}>
       <form
+        id="subscribtion"
         method="post"
         name="subscription"
         className={style.subscribe__form}
@@ -11,15 +12,17 @@ export default function Subscribe() {
       >
         <input
           required
-          id="subsribeForm"
+          name="subscribeInput"
           autoComplete="on"
           autoSave="on"
           placeholder="Your email address"
           className={style.subscribe__input}
           type="email"
         />
-        <button className={style.subscribe__button}>Subscribe</button>
       </form>
+      <button form="subscribtion" className={style.subscribe__button}>
+        Subscribe
+      </button>
     </div>
   );
 }

@@ -77,43 +77,41 @@ export default function Dashboard() {
           <span className={style.dashboard__subtitle}>STATUS</span>
         </div>
         <div className={style.dashboard__wrapOrders}>
-          {sortHistory.map((order, i) => {
-            if (i < 6) {
-              return (
-                <div key={order.id} className={style.dashboard__innerOrder}>
-                  <span
-                    className={style.dashboard__orderInfo}
-                  >{`#${order.orderId}`}</span>
-                  <span
-                    className={style.dashboard__orderInfo}
-                  >{`${order.date.getDate()} ${getMonth(
-                    order.date.getMonth()
-                  )}, ${order.date.getFullYear()}`}</span>
-                  <span className={style.dashboard__orderInfo}>
-                    <b>{`$${order.products.reduce((acum, item) => {
-                      const total = +item.price * item.amount;
-                      acum += total;
-                      return Math.round(acum);
-                    }, 0)}`}</b>{" "}
-                    {` (${order.products.reduce((acum, item) => {
-                      acum += item.amount;
-                      return acum;
-                    }, 0)} products)`}
-                  </span>
-                  <span className={style.dashboard__orderInfo}>
-                    {order.status}
-                  </span>
-                  <div className={style.dashboard__innerLink}>
-                    <Link
-                      to={`${"/account/orderHistory"}/${order.id}`}
-                      className={style.dashboard__orderLink}
-                    >
-                      View Details
-                    </Link>
-                  </div>
+          {sortHistory.map((order) => {
+            return (
+              <div key={order.id} className={style.dashboard__innerOrder}>
+                <span
+                  className={style.dashboard__orderInfo}
+                >{`#${order.orderId}`}</span>
+                <span
+                  className={style.dashboard__orderInfo}
+                >{`${order.date.getDate()} ${getMonth(
+                  order.date.getMonth()
+                )}, ${order.date.getFullYear()}`}</span>
+                <span className={style.dashboard__orderInfo}>
+                  <b>{`$${order.products.reduce((acum, item) => {
+                    const total = +item.price * item.amount;
+                    acum += total;
+                    return Math.round(acum);
+                  }, 0)}`}</b>{" "}
+                  {` (${order.products.reduce((acum, item) => {
+                    acum += item.amount;
+                    return acum;
+                  }, 0)} products)`}
+                </span>
+                <span className={style.dashboard__orderInfo}>
+                  {order.status}
+                </span>
+                <div className={style.dashboard__innerLink}>
+                  <Link
+                    to={`${"/account/orderHistory"}/${order.id}`}
+                    className={style.dashboard__orderLink}
+                  >
+                    View Details
+                  </Link>
                 </div>
-              );
-            }
+              </div>
+            );
           })}
         </div>
       </div>

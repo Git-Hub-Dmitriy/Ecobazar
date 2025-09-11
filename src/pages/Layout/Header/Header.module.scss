@@ -1,0 +1,11 @@
+@import "@styles/variables.module.scss";
+
+.header {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}

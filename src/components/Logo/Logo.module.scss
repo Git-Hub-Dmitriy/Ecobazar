@@ -1,16 +1,22 @@
 .logo {
   font-family: "Poppins", sans-serif;
-  display: inline-flex;
-  justify-items: start;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-column-gap: 8px;
+  justify-content: start;
   align-items: center;
-  .logo__title {
-    padding-left: 1.81%;
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: -3%;
+  cursor: pointer;
+  .logo__icon {
+    width: 32px;
+    height: 29px;
   }
-}
-.logo__icon {
-  width: 32px;
-  height: 29px;
+  .logo__title {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: -3%;
+    color: #002603;
+    text-align: start;
+  }
 }

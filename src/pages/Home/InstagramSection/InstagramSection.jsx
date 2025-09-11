@@ -8,7 +8,7 @@ export default function InstagramSection() {
   const [index, setIndex] = useState(null);
   return (
     <section className={style.instagramSection}>
-      <p className={style.instagramSection__title}>Follow us on Instagram</p>
+      <h1 className={style.instagramSection__title}>Follow us on Instagram</h1>
       <div className={style.instagramSection__wrapContent}>
         {imageInstagram.map((img, i) => {
           if (i < 6) {

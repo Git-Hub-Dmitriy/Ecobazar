@@ -1,8 +1,8 @@
 import * as style from "./Layout.module.scss";
 import { Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Header from "@components/Header/Header";
-import Footer from "@components/Footer/Footer";
+import Header from "@pages/Layout/Header/Header";
+import Footer from "@pages/Layout/Footer/Footer";
 import { products } from "@data/products";
 import Modal from "@components/Modal/Modal";
 import ReviewProduct from "@components/ReviewProduct/ReviewProduct";

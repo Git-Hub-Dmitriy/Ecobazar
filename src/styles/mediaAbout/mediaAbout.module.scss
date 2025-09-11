@@ -1,3 +1,8 @@
+@import "./mediaDescription.module.scss";
+@import "./mediaSectionDeliver.module.scss";
+@import "./mediaSectionFeatures.module.scss";
+@import "./mediaSectionTeam.module.scss";
+
 @media (min-width: 2000px) {
   #root .about {
     font-size: 1.2em;
@@ -28,12 +33,7 @@
     font-size: 2.2em;
   }
 }
-@media (max-width: 1500px) {
-  #root .about {
-    font-size: 0.9em;
-  }
-}
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   #root .about {
     font-size: 1em;
     .testimonials {
@@ -44,7 +44,7 @@
     }
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   #root .about {
     .testimonials {
       padding: 0 0 25px 0;

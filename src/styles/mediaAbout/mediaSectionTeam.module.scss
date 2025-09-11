@@ -15,25 +15,14 @@
   }
 }
 @media (max-width: 1300px) {
-  #root .sectionTeam .sectionTeam__innerTitle .sectionTeam__title {
-    font-size: 2.7em;
-  }
-}
-@media (max-width: 1200px) {
-  #root .sectionTeam .sectionTeam__innerTitle .sectionTeam__title {
-    font-size: 2.5em;
-  }
-}
-@media (max-width: 1000px) {
   #root .sectionTeam {
     width: 95%;
-    padding: 50px 0 50px 0;
-    .sectionTeam__innerTitle {
-      width: 70%;
+    .sectionTeam__innerTitle .sectionTeam__title {
+      font-size: 2.7em;
     }
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   #root .sectionTeam {
     grid-row-gap: 30px;
   }

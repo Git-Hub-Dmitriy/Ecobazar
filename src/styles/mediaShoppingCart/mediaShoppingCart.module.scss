@@ -1,6 +1,6 @@
-@import "@styles/mediaShoppingCart/mediaSectionProducts.module.scss";
-@import "@styles/mediaShoppingCart/mediaSectionCoupon.module.scss";
-@import "@styles/mediaShoppingCart/mediaCartTotal.module.scss";
+@import "./mediaSectionProducts.module.scss";
+@import "./mediaSectionCoupon.module.scss";
+@import "./mediaCartTotal.module.scss";
 
 @media (min-width: 2000px) {
   #root .shoppingCart {
@@ -54,23 +54,20 @@
   }
 }
 @media (max-width: 1300px) {
-  #root .shoppingCart {
-    .navigate {
-      height: 90px;
-      .navigate__wrap {
-        width: 95%;
-      }
-    }
-    .shoppingCart__wrapper {
-      width: 95%;
-    }
+  #root .shoppingCart .shoppingCart__wrapper {
+    width: 95%;
   }
 }
 @media (max-width: 900px) {
-  #root .shoppingCart .shoppingCart__wrapper .shoppingCart__wrapContent {
-    grid-column-gap: 0;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-row-gap: 20px;
+  #root .shoppingCart .shoppingCart__wrapper {
+    .notProducts {
+      width: 80%;
+    }
+    .shoppingCart__wrapContent {
+      grid-column-gap: 0;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 20px;
+    }
   }
 }

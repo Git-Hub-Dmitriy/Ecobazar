@@ -4,9 +4,9 @@ import IconSearch from "@assets/iconSearch.svg";
 export default function Search() {
   return (
     <div className={style.search}>
-      <form className={style.search__form} name="search" action="">
-        <div className={style.search__iconBox}>
-          <IconSearch stroke="black" className={style.search__icon} />
+      <form name="search" className={style.search__form}>
+        <div className={style.search__innerIcon}>
+          <IconSearch stroke="#1a1a1a" className={style.search__icon} />
         </div>
         <input
           id="formSearch"
@@ -16,8 +16,8 @@ export default function Search() {
           className={style.search__input}
           type="text"
         />
-        <button className={style.search__button}>Search</button>
       </form>
+      <button className={style.search__button}>Search</button>
     </div>
   );
 }

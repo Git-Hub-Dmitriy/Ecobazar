@@ -1,3 +1,6 @@
+@import "./mediaBlogCategories.module.scss";
+@import "./mediaBlogRecentlyAdded.module.scss";
+
 @media (hover: hover) {
   #root .blog {
     .navigate .navigate__wrap .navigate__linkHome .navigate__iconHouse:hover {
@@ -89,19 +92,6 @@
 @media (min-width: 2000px) {
   #root .blog {
     font-size: 1.2em;
-    .navigate {
-      height: 140px;
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 20px;
-          height: 21px;
-        }
-        .navigate__iconArrow {
-          width: 12px;
-          height: 10px;
-        }
-      }
-    }
     .sortProduct {
       grid-template-columns: 12% auto;
       grid-column-gap: 22%;
@@ -183,16 +173,6 @@
 @media (min-width: 2300px) {
   #root .blog {
     font-size: 1.4em;
-    .navigate .navigate__wrap {
-      .navigate__linkHome .navigate__iconHouse {
-        width: 24px;
-        height: 24px;
-      }
-      .navigate__iconArrow {
-        width: 16px;
-        height: 12px;
-      }
-    }
     .sortProduct .sortProduct__buttonFilter {
       height: 65px;
       .sortProduct__buttonFilterText {
@@ -218,18 +198,6 @@
 @media (min-width: 2700px) {
   #root .blog {
     font-size: 1.6em;
-    .navigate {
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 30px;
-          height: 30px;
-        }
-        .navigate__iconArrow {
-          width: 18px;
-          height: 14px;
-        }
-      }
-    }
     .sortProduct {
       .sortProduct__wrapSorted .sortProduct__innerSort .sortProduct__innerList {
         .sortProduct__iconArrow {
@@ -313,19 +281,6 @@
 @media (min-width: 3100px) {
   #root .blog {
     font-size: 1.8em;
-    .navigate {
-      height: 160px;
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 34px;
-          height: 34px;
-        }
-        .navigate__iconArrow {
-          width: 20px;
-          height: 18px;
-        }
-      }
-    }
     .sortProduct {
       .sortProduct__wrapSorted .sortProduct__innerSort .sortProduct__innerList {
         .sortProduct__iconArrow {
@@ -361,19 +316,6 @@
 @media (min-width: 3400px) {
   #root .blog {
     font-size: 2em;
-    .navigate {
-      height: 180px;
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 36px;
-          height: 36px;
-        }
-        .navigate__iconArrow {
-          width: 22px;
-          height: 20px;
-        }
-      }
-    }
     .sortProduct {
       padding: 60px 0 60px 0;
       .sortProduct__wrapSorted .sortProduct__innerSort .sortProduct__innerList {
@@ -463,19 +405,6 @@
 @media (min-width: 3700px) {
   #root .blog {
     font-size: 2.2em;
-    .navigate {
-      height: 240px;
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 40px;
-          height: 40px;
-        }
-        .navigate__iconArrow {
-          width: 26px;
-          height: 22px;
-        }
-      }
-    }
     .sortProduct {
       .sortProduct__wrapSorted .sortProduct__innerSort .sortProduct__innerList {
         .sortProduct__iconArrow {
@@ -554,7 +483,6 @@
 }
 @media (max-width: 1625px) {
   #root .blog {
-    font-size: 0.9em;
     .sortProduct {
       grid-template-columns: 12% auto;
       grid-column-gap: 22%;
@@ -593,15 +521,18 @@
 }
 @media (max-width: 1300px) {
   #root .blog {
-    .navigate {
-      height: 100px;
-    }
     .sortProduct {
+      width: 95%;
       grid-template-columns: 14% auto;
       grid-column-gap: 20%;
+      .sortProduct__buttonFilter .sortProduct__buttonFilterIcon {
+        width: 18px;
+        height: 15px;
+      }
     }
     .blog__gridContainer {
       grid-column-gap: 1.5%;
+      width: 95%;
       grid-template-columns: 32.121% 66.36%;
       .blog__wrapPosts {
         .blog__innerPosts {
@@ -666,60 +597,7 @@
     }
   }
 }
-@media (max-width: 1000px) {
-  #root .blog {
-    .navigate {
-      height: 90px;
-      .navigate__wrap {
-        width: 95%;
-      }
-    }
-    .sortProduct {
-      width: 95%;
-      .sortProduct__buttonFilter .sortProduct__buttonFilterIcon {
-        width: 18px;
-        height: 15px;
-      }
-    }
-    .blog__gridContainer {
-      width: 95%;
-      .blog__wrapPosts .blog__innerPosts .post {
-        .post__wrapContent .post__innerTag {
-          .post__tag .post__iconTag {
-            display: block;
-          }
-          .post__user .post__iconUser {
-            display: block;
-          }
-          .post__comment .post__iconComment {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 850px) {
-  #root
-    .blog
-    .blog__gridContainer
-    .blog__wrapPosts
-    .blog__innerPosts
-    .post
-    .post__wrapContent
-    .post__innerTag {
-    .post__tag .post__iconTag {
-      display: none;
-    }
-    .post__user .post__iconUser {
-      display: none;
-    }
-    .post__comment .post__iconComment {
-      display: none;
-    }
-  }
-}
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   #root .blog {
     .sortProduct {
       grid-template-columns: auto;
