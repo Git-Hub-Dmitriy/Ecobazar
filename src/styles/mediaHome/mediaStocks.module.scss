@@ -58,7 +58,7 @@
     }
   }
 }
-@media (min-width: 3300px) {
+@media (min-width: 3500px) {
   #root .stocks .btnShop {
     height: 110px;
   }
@@ -75,7 +75,6 @@
 @media (max-width: 1400px) {
   #root .stocks {
     grid-column-gap: 15px;
-    font-size: 0.9em;
     .stocks__section .btnShop {
       height: 40px;
       grid-column-gap: 8px;
@@ -86,71 +85,45 @@
     }
   }
 }
-@media (max-width: 1250px) {
-  #root .stocks {
-    font-size: 0.8em;
-    .stocks__section .btnShop {
-      height: 35px;
-      width: 40%;
-    }
-  }
-}
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   #root .stocks {
     width: 95%;
   }
 }
-@media (max-width: 800px) {
-  #root .stocks .stocks__section .btnShop {
-    width: 50%;
-    left: 25%;
-    grid-column-gap: 8px;
-    .btnShop__arrow {
-      width: 10px;
-      height: 8px;
-    }
-  }
-}
-@media (max-width: 650px) {
+@media (max-width: 900px) {
   #root .stocks {
-    font-size: 0.7em;
     padding-bottom: 20px;
     .stocks__section .btnShop {
       width: 50%;
-      height: 30px;
-      grid-column-gap: 6px;
-      .btnShop__arrow {
-        width: 10px;
-        height: 8px;
-      }
+      grid-column-gap: 8px;
     }
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   #root .stocks {
-    grid-column-gap: 6px;
-    .stocks__section .btnShop {
-      height: 28px;
-      grid-column-gap: 0px;
-      .btnShop__arrow {
-        display: none;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    .stocks__section {
+      border-radius: 10px;
+      .stocks__image {
+        height: 300px;
+        width: 80%;
+        object-fit: cover;
+        object-position: top center;
+      }
+      .btnShop {
+        width: 40%;
+        top: auto;
+        bottom: 10px;
+        right: 50%;
       }
     }
   }
 }
 @media (max-width: 500px) {
-  #root .stocks {
-    width: 60%;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
-    .stocks__section .btnShop {
-      height: 35px;
-      grid-column-gap: 10px;
-      .btnShop__arrow {
-        display: block;
-      }
-    }
+  #root .stocks .stocks__section .stocks__image {
+    width: 100%;
   }
 }

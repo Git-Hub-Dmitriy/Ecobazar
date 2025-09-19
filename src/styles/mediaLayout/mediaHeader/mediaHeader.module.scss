@@ -1,6 +1,8 @@
 @import "./mediaSectionCurrency.module.scss";
 @import "./mediaSectionLinks.module.scss";
 @import "./mediaSectionSearch.module.scss";
+@import "./mediaSectionBurger.module.scss";
+@import "./mediaHidSection.module.scss";
 
 @media (min-width: 2000px) {
   #root .header {

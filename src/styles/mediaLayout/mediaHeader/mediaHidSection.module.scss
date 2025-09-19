@@ -1,0 +1,26 @@
+@media (hover: hover) {
+  #root .header .header__modal .header__modalContent .hidSection {
+    .hidSection__link:hover {
+      transform: scale(1.05);
+    }
+    .hidSection__link_login:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+@media (hover: none) {
+  #root .header .header__modal .header__modalContent .hidSection {
+    .hidSection__link:active {
+      transform: scale(1.05);
+    }
+    .hidSection__link_login:active {
+      transform: scale(1.05);
+    }
+  }
+}
+@media (max-width: 450px) {
+  #root .header .header__modal .header__modalContent .hidSection {
+    grid-template-columns: auto;
+    grid-column-gap: 0;
+  }
+}

@@ -96,10 +96,10 @@ export default function OrderHistory() {
         </div>
       </div>
       <Pagination
+        page={currentPage}
         productPerPage={orderPerPage}
         totalProducts={historySort.length}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
+        handlePage={setCurrentPage}
       />
     </main>
   );

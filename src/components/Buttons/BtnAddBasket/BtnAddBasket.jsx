@@ -21,7 +21,6 @@ export default function BtnAddBasket({ activeCard, product }) {
       document.body.addEventListener(
         "keydown",
         function (event) {
-          console.log("Сработало");
           if (event.code === "Escape") {
             setModal({
               active: false,

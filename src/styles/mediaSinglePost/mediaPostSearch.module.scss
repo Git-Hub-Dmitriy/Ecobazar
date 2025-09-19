@@ -57,23 +57,16 @@
   }
 }
 @media (max-width: 1300px) {
-  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
-    .postSearch__input {
-      width: 200px;
-    }
-  }
-}
-@media (max-width: 900px) {
   #root
     .singlePost
     .singlePost__container
     .singlePost__nav
     .postSearch
     .postSearch__input {
-    width: 150px;
+    width: 200px;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   #root .singlePost .singlePost__container .singlePost__nav .postSearch {
     justify-content: center;
     padding: 0px;

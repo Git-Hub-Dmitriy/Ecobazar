@@ -1,11 +1,25 @@
+@import "@styles/variables.module.scss";
+
 @media (hover: hover) {
   #root .sectionCurrency .sectionCurrency__wrapCurrency {
     .sectionCurrency__wrapLanguage {
       .sectionCurrency__innerLanguage:hover {
-        transform: scale(1.1);
+        .sectionCurrency__selectedLanguage {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listLanguage .sectionCurrency__item:hover {
+          background-color: white;
+          color: $dark;
+        }
       }
       .sectionCurrency__innerCurrency:hover {
-        transform: scale(1.1);
+        .sectionCurrency__selectedCurrency {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listCurrency .sectionCurrency__item:hover {
+          background-color: white;
+          color: $dark;
+        }
       }
     }
     .sectionCurrency__innerLinkLogin:hover {
@@ -17,10 +31,22 @@
   #root .sectionCurrency .sectionCurrency__wrapCurrency {
     .sectionCurrency__wrapLanguage {
       .sectionCurrency__innerLanguage:active {
-        transform: scale(1.1);
+        .sectionCurrency__selectedLanguage {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listLanguage .sectionCurrency__item:active {
+          background-color: white;
+          color: $dark;
+        }
       }
       .sectionCurrency__innerCurrency:active {
-        transform: scale(1.1);
+        .sectionCurrency__selectedCurrency {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listCurrency .sectionCurrency__item:active {
+          background-color: white;
+          color: $dark;
+        }
       }
     }
     .sectionCurrency__innerLinkLogin:active {
@@ -44,6 +70,9 @@
           width: 12px;
           height: 10px;
         }
+        .sectionCurrency__listLanguage {
+          max-height: 135px;
+        }
       }
       .sectionCurrency__innerCurrency {
         grid-column-gap: 10px;
@@ -51,26 +80,51 @@
           width: 12px;
           height: 10px;
         }
+        .sectionCurrency__listCurrency {
+          max-height: 135px;
+        }
       }
     }
   }
 }
 @media (min-width: 2300px) {
-  #root
-    .sectionCurrency
-    .sectionCurrency__innerAddress
-    .sectionCurrency__iconPoint {
-    width: 22px;
-    height: 26px;
+  #root .sectionCurrency {
+    .sectionCurrency__innerAddress .sectionCurrency__iconPoint {
+      width: 22px;
+      height: 26px;
+    }
+    .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage .sectionCurrency__listLanguage {
+        max-height: 150px;
+      }
+      .sectionCurrency__innerCurrency .sectionCurrency__listCurrency {
+        max-height: 150px;
+      }
+    }
   }
 }
 @media (min-width: 2700px) {
-  #root
-    .sectionCurrency
-    .sectionCurrency__innerAddress
-    .sectionCurrency__iconPoint {
-    width: 26px;
-    height: 30px;
+  #root .sectionCurrency {
+    .sectionCurrency__innerAddress .sectionCurrency__iconPoint {
+      width: 26px;
+      height: 30px;
+    }
+    .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage .sectionCurrency__listLanguage {
+        max-height: 188px;
+        .sectionCurrency__item {
+          padding: 10px 4px;
+          border-radius: 12px;
+        }
+      }
+      .sectionCurrency__innerCurrency .sectionCurrency__listCurrency {
+        max-height: 188px;
+        .sectionCurrency__item {
+          padding: 10px 4px;
+          border-radius: 12px;
+        }
+      }
+    }
   }
 }
 @media (min-width: 3100px) {
@@ -83,6 +137,11 @@
       grid-column-gap: 35px;
       .sectionCurrency__innerLanguage {
         grid-column-gap: 15px;
+        .sectionCurrency__listLanguage {
+          top: 40px;
+          border-radius: 12px;
+          max-height: 203px;
+        }
         .sectionCurrency__iconArrowDown {
           width: 18px;
           height: 14px;
@@ -90,11 +149,29 @@
       }
       .sectionCurrency__innerCurrency {
         grid-column-gap: 15px;
+        .sectionCurrency__listCurrency {
+          top: 40px;
+          border-radius: 12px;
+          max-height: 203px;
+        }
         .sectionCurrency__iconArrowDown {
           width: 18px;
           height: 14px;
         }
       }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root
+    .sectionCurrency
+    .sectionCurrency__wrapCurrency
+    .sectionCurrency__wrapLanguage {
+    .sectionCurrency__innerLanguage .sectionCurrency__listLanguage {
+      max-height: 217px;
+    }
+    .sectionCurrency__innerCurrency .sectionCurrency__listCurrency {
+      max-height: 217px;
     }
   }
 }
@@ -105,13 +182,23 @@
       height: 38px;
     }
     .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
-      .sectionCurrency__innerLanguage .sectionCurrency__iconArrowDown {
-        width: 22px;
-        height: 16px;
+      .sectionCurrency__innerLanguage {
+        .sectionCurrency__listLanguage {
+          max-height: 233px;
+        }
+        .sectionCurrency__iconArrowDown {
+          width: 22px;
+          height: 16px;
+        }
       }
-      .sectionCurrency__innerCurrency .sectionCurrency__iconArrowDown {
-        width: 22px;
-        height: 16px;
+      .sectionCurrency__innerCurrency {
+        .sectionCurrency__listCurrency {
+          max-height: 233px;
+        }
+        .sectionCurrency__iconArrowDown {
+          width: 22px;
+          height: 16px;
+        }
       }
     }
   }
@@ -123,17 +210,6 @@
 }
 @media (max-width: 700px) {
   #root .sectionCurrency {
-    justify-content: normal;
-    justify-items: center;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-column-gap: 0;
-    grid-row-gap: 30px;
-    .sectionCurrency__innerAddress {
-      justify-content: center;
-    }
-    .sectionCurrency__wrapCurrency {
-      justify-content: space-between;
-    }
+    display: none;
   }
 }

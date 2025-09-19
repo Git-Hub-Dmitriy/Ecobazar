@@ -15,6 +15,9 @@ import activeModalReducer from "@store/reducers/activeModalSlice";
 import statesShopReducer from "@store/reducers/statesShopSlice";
 import statesBlogReducer from "@store/reducers/statesBlogSlice";
 import shoppingCartReducer from "@store/reducers/shoppingCartSlice";
+import languageSlice from "@store/reducers/languagesSlice";
+import currencySlice from "@store/reducers/currenciesSlice";
+import wishlistSlice from "@store/reducers/wishlistSlice";
 
 const config = {
   key: "root",
@@ -28,6 +31,9 @@ const reducers = combineReducers({
   statesShop: statesShopReducer,
   statesBlog: statesBlogReducer,
   shoppingCart: shoppingCartReducer,
+  language: languageSlice,
+  currency: currencySlice,
+  wishlist: wishlistSlice,
 });
 
 const persisted = persistReducer(config, reducers);

@@ -32,13 +32,13 @@ export default function Post({ active, setActive, bannar, path }) {
         active !== bannar.id ? style.post : `${style.post} ${style.post_active}`
       }
     >
-      <div className={style.post__innerDate}>
-        <h3 className={style.post__date}>{bannar.date.getDate()}</h3>
-        <h3 className={style.post__day}>
-          {receiveMonth(bannar.date.getMonth())}
-        </h3>
-      </div>
       <div className={style.post__wrapImage}>
+        <div className={style.post__innerDate}>
+          <h3 className={style.post__date}>{bannar.date.getDate()}</h3>
+          <h3 className={style.post__day}>
+            {receiveMonth(bannar.date.getMonth())}
+          </h3>
+        </div>
         <img className={style.post__image} src={bannar.img} alt="Bannar news" />
       </div>
       <div className={style.post__wrapContent}>

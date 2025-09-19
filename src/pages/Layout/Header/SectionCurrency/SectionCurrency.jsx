@@ -2,8 +2,17 @@ import * as style from "./SectionCurrency.module.scss";
 import IconArrow from "@assets/iconArrowDown.svg";
 import { NavLink } from "react-router-dom";
 import IconMarker from "@assets/iconMarkerAddress.svg";
+import { useState } from "react";
 
-export default function SectionCurrency() {
+export default function SectionCurrency({
+  languages,
+  currencies,
+  changeLanguage,
+  changeCurrency,
+}) {
+  const [activeLang, setActiveLang] = useState(false);
+  const [activeCurrency, setActiveCurrency] = useState(false);
+
   return (
     <section className={style.sectionCurrency}>
       <div className={style.sectionCurrency__innerAddress}>
@@ -17,19 +26,75 @@ export default function SectionCurrency() {
       </div>
       <div className={style.sectionCurrency__wrapCurrency}>
         <div className={style.sectionCurrency__wrapLanguage}>
-          <div className={style.sectionCurrency__innerLanguage}>
-            <p className={style.sectionCurrency__subtitle}>Eng</p>
+          <div
+            tabIndex={0}
+            onBlur={() => setActiveLang(false)}
+            onClick={() => setActiveLang(!activeLang)}
+            className={style.sectionCurrency__innerLanguage}
+          >
+            <h4 className={style.sectionCurrency__selectedLanguage}>
+              {languages.selectedLanguage}
+            </h4>
             <IconArrow
               stroke={"#1a1a1a"}
-              className={style.sectionCurrency__iconArrowDown}
+              className={
+                activeLang !== true
+                  ? style.sectionCurrency__iconArrowDown
+                  : `${style.sectionCurrency__iconArrowDown} ${style.sectionCurrency__iconArrowDown_active}`
+              }
             />
+            <ul
+              className={
+                activeLang !== true
+                  ? style.sectionCurrency__listLanguage
+                  : `${style.sectionCurrency__listLanguage} ${style.sectionCurrency__listLanguage_active}`
+              }
+            >
+              {languages.languages?.map((item, i) => (
+                <li
+                  onClick={() => changeLanguage(item)}
+                  key={i}
+                  className={style.sectionCurrency__item}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className={style.sectionCurrency__innerCurrency}>
-            <p className={style.sectionCurrency__subtitle}>USD</p>
+          <div
+            tabIndex={1}
+            onBlur={() => setActiveCurrency(false)}
+            onClick={() => setActiveCurrency(!activeCurrency)}
+            className={style.sectionCurrency__innerCurrency}
+          >
+            <h4 className={style.sectionCurrency__selectedCurrency}>
+              {currencies.selectedCurrency}
+            </h4>
             <IconArrow
               stroke={"#1a1a1a"}
-              className={style.sectionCurrency__iconArrowDown}
+              className={
+                activeCurrency !== true
+                  ? style.sectionCurrency__iconArrowDown
+                  : `${style.sectionCurrency__iconArrowDown} ${style.sectionCurrency__iconArrowDown_active}`
+              }
             />
+            <ul
+              className={
+                activeCurrency !== true
+                  ? style.sectionCurrency__listCurrency
+                  : `${style.sectionCurrency__listCurrency} ${style.sectionCurrency__listCurrency_active}`
+              }
+            >
+              {currencies.currencies?.map((item, i) => (
+                <li
+                  onClick={() => changeCurrency(item)}
+                  key={i}
+                  className={style.sectionCurrency__item}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <NavLink

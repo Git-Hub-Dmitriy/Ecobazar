@@ -30,36 +30,43 @@
 @media (min-width: 2000px) {
   #root .shop .shop__gridProducts .listProducts {
     grid-row-gap: 3px;
-    font-size: 1.2em;
     .card {
+      .discountProcentSale {
+        height: 30px;
+        width: 35%;
+        border-radius: 10px;
+      }
       .btnAddWishlist {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         .btnAddWishlist__icon {
           width: 20px;
           height: 20px;
         }
       }
       .btnActiveModal {
-        width: 50px;
-        height: 50px;
-        top: 20%;
+        width: 45px;
+        height: 45px;
+        top: 90px;
         .btnActiveModal__icon {
           width: 20px;
           height: 20px;
         }
       }
       .btnAddBasket {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         .btnAddBasket__icon {
           width: 20px;
           height: 20px;
         }
       }
-      .card__wrapContent .starsRating .starsRating__star {
-        width: 15px;
-        height: 12px;
+      .card__wrapContent .starsRating {
+        grid-column-gap: 8px;
+        .starsRating__star {
+          width: 12px;
+          height: 12px;
+        }
       }
     }
     .card_active {
@@ -68,207 +75,195 @@
   }
 }
 @media (min-width: 2300px) {
-  #root .shop .shop__gridProducts .listProducts {
-    font-size: 1.4em;
-    .card {
-      .btnAddWishlist {
-        width: 55px;
-        height: 55px;
+  #root .shop .shop__gridProducts .listProducts .card {
+    .btnAddWishlist {
+      width: 50px;
+      height: 50px;
+    }
+    .btnActiveModal {
+      width: 50px;
+      height: 50px;
+    }
+    .btnAddBasket {
+      width: 50px;
+      height: 50px;
+    }
+    .card__wrapContent {
+      .card__innerPrice {
+        grid-column-gap: 12px;
       }
-      .btnActiveModal {
-        width: 55px;
-        height: 55px;
+      .starsRating .starsRating__star {
+        width: 15px;
+        height: 15px;
       }
-      .btnAddBasket {
-        width: 55px;
-        height: 55px;
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #root .shop .shop__gridProducts .listProducts .card {
+    .discountProcentSale {
+      height: 35px;
+    }
+    .btnAddWishlist {
+      width: 55px;
+      height: 55px;
+      .btnAddWishlist__icon {
+        width: 25px;
+        height: 25px;
       }
-      .card__wrapContent {
-        .card__innerPrice {
-          grid-column-gap: 12px;
-        }
-        .starsRating {
-          grid-column-gap: 8px;
-          .starsRating__star {
-            width: 16px;
-            height: 16px;
-          }
-        }
+    }
+    .btnActiveModal {
+      width: 55px;
+      height: 55px;
+      top: 110px;
+      .btnActiveModal__icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .btnAddBasket {
+      width: 55px;
+      height: 55px;
+      .btnAddBasket__icon {
+        width: 25px;
+        height: 25px;
       }
     }
   }
 }
 @media (min-width: 2700px) {
-  #root .shop .shop__gridProducts .listProducts {
-    font-size: 1.6em;
-    .card {
-      .btnAddWishlist {
-        width: 65px;
-        height: 65px;
-        .btnAddWishlist__icon {
-          width: 25px;
-          height: 25px;
-        }
-      }
-      .btnActiveModal {
-        width: 65px;
-        height: 65px;
-        .btnActiveModal__icon {
-          width: 25px;
-          height: 25px;
-        }
-      }
-      .btnAddBasket {
-        width: 65px;
-        height: 65px;
-        .btnAddBasket__icon {
-          width: 25px;
-          height: 25px;
-        }
-      }
-      .card__wrapContent .starsRating .starsRating__star {
-        width: 20px;
-        height: 16px;
-      }
+  #root .shop .shop__gridProducts .listProducts .card {
+    .btnAddWishlist {
+      width: 60px;
+      height: 60px;
+    }
+    .btnActiveModal {
+      width: 60px;
+      height: 60px;
+    }
+    .btnAddBasket {
+      width: 60px;
+      height: 60px;
     }
   }
 }
 @media (min-width: 3100px) {
-  #root .shop .shop__gridProducts .listProducts {
-    font-size: 1.8em;
-    .card {
-      .btnAddWishlist {
-        width: 75px;
-        height: 75px;
-        .btnAddWishlist__icon {
-          width: 30px;
-          height: 30px;
-        }
+  #root .shop .shop__gridProducts .listProducts .card {
+    .discountProcentSale {
+      height: 40px;
+    }
+    .btnAddWishlist {
+      width: 70px;
+      height: 70px;
+      .btnAddWishlist__icon {
+        width: 30px;
+        height: 30px;
       }
-      .btnActiveModal {
-        width: 75px;
-        height: 75px;
-        .btnActiveModal__icon {
-          width: 30px;
-          height: 30px;
-        }
+    }
+    .btnActiveModal {
+      width: 70px;
+      height: 70px;
+      top: 120px;
+      .btnActiveModal__icon {
+        width: 30px;
+        height: 30px;
       }
-      .btnAddBasket {
-        width: 75px;
-        height: 75px;
-        .btnAddBasket__icon {
-          width: 30px;
-          height: 30px;
-        }
+    }
+    .btnAddBasket {
+      width: 70px;
+      height: 70px;
+      .btnAddBasket__icon {
+        width: 30px;
+        height: 30px;
       }
-      .card__wrapContent .starsRating .starsRating__star {
-        width: 24px;
-        height: 20px;
-      }
+    }
+    .card__wrapContent .starsRating .starsRating__star {
+      width: 18px;
+      height: 18px;
     }
   }
 }
-@media (min-width: 3400px) {
-  #root .shop .shop__gridProducts .listProducts {
-    font-size: 2em;
-    .card {
-      .btnAddWishlist {
-        width: 85px;
-        height: 85px;
-        .btnAddWishlist__icon {
-          width: 35px;
-          height: 35px;
-        }
-      }
-      .btnActiveModal {
-        width: 85px;
-        height: 85px;
-        .btnActiveModal__icon {
-          width: 35px;
-          height: 35px;
-        }
-      }
-      .btnAddBasket {
-        width: 85px;
-        height: 85px;
-        .btnAddBasket__icon {
-          width: 35px;
-          height: 35px;
-        }
-      }
-      .discountProcentSale {
-        border-radius: 15px;
-      }
-      .card__wrapContent .starsRating .starsRating__star {
-        width: 26px;
-        height: 22px;
-      }
+@media (min-width: 3300px) {
+  #root .shop .shop__gridProducts .listProducts .card {
+    .discountProcentSale {
+      border-radius: 12px;
+    }
+    .btnAddWishlist {
+      width: 75px;
+      height: 75px;
+    }
+    .btnActiveModal {
+      width: 75px;
+      height: 75px;
+      top: 130px;
+    }
+    .btnAddBasket {
+      width: 75px;
+      height: 75px;
+    }
+    .card__wrapContent .starsRating .starsRating__star {
+      width: 20px;
+      height: 20px;
     }
   }
 }
 @media (min-width: 3700px) {
-  #root .shop .shop__gridProducts .listProducts {
-    font-size: 2.2em;
-    .card {
-      .btnAddWishlist {
-        width: 90px;
-        height: 90px;
-        .btnAddWishlist__icon {
-          width: 40px;
-          height: 40px;
-        }
-      }
-      .btnActiveModal {
-        width: 90px;
-        height: 90px;
-        .btnActiveModal__icon {
-          width: 40px;
-          height: 40px;
-        }
-      }
-      .btnAddBasket {
-        width: 90px;
-        height: 90px;
-        .btnAddBasket__icon {
-          width: 40px;
-          height: 40px;
-        }
-      }
-      .card__wrapContent .starsRating .starsRating__star {
-        width: 28px;
-        height: 24px;
-      }
-    }
-  }
-}
-@media (max-width: 1600px) {
-  #root .shop .shop__gridProducts .listProducts {
-    font-size: 0.9em;
-    .card {
-      .card__wrapImg {
-        padding-bottom: 18px;
-      }
-      .card__wrapContent {
-        padding: 0px 0 12px 12px;
-      }
-      .discountProcentSale {
-        width: 35%;
-      }
-    }
-  }
-}
-@media (max-width: 1400px) {
   #root .shop .shop__gridProducts .listProducts .card {
+    .discountProcentSale {
+      height: 45px;
+    }
     .btnAddWishlist {
-      left: 76%;
+      width: 80px;
+      height: 80px;
+      .btnAddWishlist__icon {
+        width: 35px;
+        height: 35px;
+      }
     }
     .btnActiveModal {
-      left: 76%;
-      top: 19%;
+      width: 80px;
+      height: 80px;
+      .btnActiveModal__icon {
+        width: 35px;
+        height: 35px;
+      }
     }
     .btnAddBasket {
-      left: 76%;
-      top: 82%;
+      width: 80px;
+      height: 80px;
+      .btnAddBasket__icon {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .card__wrapContent .starsRating .starsRating__star {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  #root .shop .shop__gridProducts .listProducts .card {
+    .card__wrapImg {
+      padding-bottom: 18px;
+    }
+    .card__wrapContent {
+      padding: 0px 0 12px 12px;
+    }
+    .discountProcentSale {
+      width: 35%;
+    }
+    .btnAddWishlist {
+      right: 10px;
+      top: 10px;
+    }
+    .btnActiveModal {
+      right: 10px;
+      top: 65px;
+    }
+    .btnAddBasket {
+      right: 10px;
+      bottom: 10px;
     }
   }
 }
@@ -286,7 +281,6 @@
     .btnActiveModal {
       width: 35px;
       height: 35px;
-      top: 22%;
     }
     .btnAddBasket {
       width: 35px;
@@ -300,21 +294,7 @@
     }
   }
 }
-@media (max-width: 800px) {
-  #root .shop .shop__gridProducts .listProducts .card {
-    .card__wrapImg {
-      padding: 0;
-    }
-    .card__wrapContent {
-      grid-row-gap: 6px;
-    }
-    .discountProcentSale {
-      width: 40%;
-      font-size: 0.8em;
-    }
-  }
-}
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   #root .shop .shop__gridProducts .listProducts {
     grid-template-columns: 48.69% 48.69%;
     grid-auto-rows: auto;
@@ -348,7 +328,7 @@
     .card:nth-child(1) {
       grid-row: 1 / 2;
       grid-column: 1 / 3;
-      width: 70%;
+      width: 60%;
       .discountProcentSale {
         width: 20%;
       }
@@ -378,11 +358,6 @@
   }
 }
 @media (max-width: 600px) {
-  #root .shop .shop__gridProducts .listProducts .card .discountProcentSale {
-    width: 35%;
-  }
-}
-@media (max-width: 550px) {
   #root .shop .shop__gridProducts .listProducts {
     grid-template-columns: auto;
     grid-auto-rows: auto;
@@ -391,12 +366,18 @@
       grid-row: 1 / 2;
       width: 100%;
       .discountProcentSale {
-        width: 25%;
+        width: 30%;
+      }
+      .btnActiveModal {
+        top: 105px;
       }
     }
     .card {
       .discountProcentSale {
-        width: 25%;
+        width: 30%;
+      }
+      .btnActiveModal {
+        top: 105px;
       }
     }
   }

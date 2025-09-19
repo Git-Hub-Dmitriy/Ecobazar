@@ -2,13 +2,13 @@ import * as style from "./Wishlist.module.scss";
 import { Helmet } from "react-helmet";
 import Navigate from "@components/Navigate/Navigate";
 import { useSelector, useDispatch } from "react-redux";
-import { removeShoppingCart } from "@store/reducers/shoppingCartSlice";
+import { removeProductWishlist } from "@store/reducers/wishlistSlice";
 import SocialMedia from "@components/SocialMedia/SocialMedia";
 import BtnAddBasket from "@components/Buttons/BtnAddBasket/BtnAddBasket";
 import NotProducts from "./NotProducts/NotProducts";
 
 export default function Wishlist() {
-  const wishlist = useSelector((store) => store.shoppingCart?.shoppingCart);
+  const wishlist = useSelector((store) => store.wishlist.wishlist);
   const dispatch = useDispatch();
 
   return (
@@ -63,7 +63,9 @@ export default function Wishlist() {
                     <div className={style.wishlist__innerBtn}>
                       <BtnAddBasket product={product} iconVisible={false} />
                       <button
-                        onClick={() => dispatch(removeShoppingCart(product.id))}
+                        onClick={() =>
+                          dispatch(removeProductWishlist(product.id))
+                        }
                         className={style.wishlist__btnRemove}
                       >
                         X

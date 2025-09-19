@@ -449,29 +449,3 @@
     }
   }
 }
-@media (max-width: 450px) {
-  #root .singlePost .singlePost__container .postInfo__wrapPost {
-    .sectionComments
-      .sectionComments__wrapForm
-      .sectionComments__form
-      .sectionComments__btnComment {
-      font-size: 0.8em;
-    }
-    .postInfo__advertising .btnShop {
-      font-size: 0.8em;
-    }
-  }
-}
-@media (max-width: 400px) {
-  #root .singlePost .singlePost__container .postInfo__wrapPost {
-    .sectionComments
-      .sectionComments__wrapForm
-      .sectionComments__form
-      .sectionComments__btnComment {
-      width: 32%;
-    }
-    .postInfo__advertising .btnShop {
-      width: 28%;
-    }
-  }
-}

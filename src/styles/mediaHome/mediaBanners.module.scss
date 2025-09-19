@@ -72,7 +72,7 @@
     }
   }
 }
-@media (min-width: 2800px) {
+@media (min-width: 2700px) {
   #root .banners {
     .banners__bannar .btnShop {
       height: 80px;
@@ -130,130 +130,68 @@
     }
   }
 }
-@media (max-width: 1840px) {
+@media (max-width: 1600px) {
   #root .banners .banners__bannarOne .btnShop {
-    grid-column-gap: 6px;
-  }
-}
-@media (max-width: 1770px) {
-  #root .banners .banners__bannarOne .btnShop {
-    font-size: 0.9em;
-    .btnShop__arrow {
-      width: 12px;
-      height: 10px;
-    }
-  }
-}
-@media (max-width: 1582px) {
-  #root .banners {
-    .banners__bannar .btnShop {
-      height: 45px;
-    }
-    .banners__bannarOne .btnShop {
-      font-size: 0.8em;
-      grid-column-gap: 4px;
-      width: 28.531%;
-      justify-content: start;
-      .btnShop__arrow {
-        width: 11px;
-        height: 9px;
-      }
-    }
+    width: 38%;
   }
 }
 @media (max-width: 1300px) {
   #root .banners {
-    font-size: 0.9em;
-    .banners__bannar .btnShop {
-      height: 35px;
-      grid-column-gap: 8px;
-      .btnShop__arrow {
-        width: 11px;
-        height: 9px;
-      }
-    }
-  }
-}
-@media (max-width: 1160px) {
-  #root .banners {
-    grid-gap: 16px;
-    .banners__bannar .btnShop {
-      height: 30px;
-      font-size: 0.9em;
-    }
-    .banners__bannarOne .btnShop {
-      width: 34%;
-      font-size: 0.8em;
-    }
-  }
-}
-@media (max-width: 1000px) {
-  #root .banners {
     width: 95%;
-    .banners__bannarOne .btnShop {
-      background-color: transparent;
-    }
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 1100px) {
   #root .banners {
-    grid-gap: 12px;
-    padding-bottom: 20px;
     .banners__bannar .btnShop {
-      font-size: 0.7em;
+      width: 25%;
     }
     .banners__bannarOne .btnShop {
-      width: 40%;
+      width: 45%;
     }
   }
 }
-@media (max-width: 700px) {
-  #root .banners {
-    padding-top: 15px;
-    padding-bottom: 35px;
-    .banners__bannarOne .btnShop {
-      grid-column-gap: 0px;
-      .btnShop__arrow {
-        display: none;
-      }
-    }
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   #root .banners {
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 25px;
+    grid-column-gap: 0;
+    max-height: none;
+    height: auto;
+    padding: 0;
+    margin-bottom: 25px;
     .banners__bannar {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
       .banners__img {
         -o-object-position: 0% 20%;
         object-position: 0% 20%;
+        height: 250px;
       }
       .btnShop {
-        top: 80%;
-        font-size: 0.8em;
-        left: 72%;
+        top: auto;
+        left: auto;
+        right: 15px;
+        bottom: 15px;
       }
     }
     .banners__bannarOne {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       .banners__img {
-        -o-object-position: 0% 25%;
-        object-position: 0% 25%;
+        -o-object-position: 0% 20%;
+        object-position: 0% 20%;
+        height: 250px;
       }
       .btnShop {
-        top: 80%;
         background-color: white;
-        width: 21.903%;
-        height: 30px;
-        left: 72%;
-        grid-column-gap: 8px;
+        width: 25%;
+        height: 51px;
         justify-content: center;
-        .btnShop__arrow {
-          display: block;
-        }
+        top: auto;
+        left: auto;
+        right: 15px;
+        bottom: 15px;
       }
     }
     .banners__bannarTwo {
@@ -262,38 +200,30 @@
       .banners__img {
         -o-object-position: 0% 33%;
         object-position: 0% 33%;
+        height: 250px;
       }
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   #root .banners {
     .banners__bannar .btnShop {
-      width: 24%;
-      grid-column-gap: 5px;
+      width: 35%;
     }
     .banners__bannarOne .btnShop {
-      grid-column-gap: 5px;
-      width: 24%;
+      width: 35%;
     }
   }
 }
 @media (max-width: 400px) {
   #root .banners {
     .banners__bannar .btnShop {
-      font-size: 0.7em;
+      width: 45%;
+      height: 45px;
     }
     .banners__bannarOne .btnShop {
-      font-size: 0.7em;
-    }
-  }
-}
-@media (max-width: 350px) {
-  #root .banners {
-    font-size: 0.8em;
-    .banners__bannar .btnShop .btnShop__arrow {
-      width: 10px;
-      height: 8px;
+      width: 45%;
+      height: 45px;
     }
   }
 }

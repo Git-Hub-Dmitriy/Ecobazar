@@ -30,7 +30,7 @@ export default function Descriptions() {
           })}
         </div>
       </div>
-      <div className={style.descriptions__wrap__video}>
+      <div className={style.descriptions__wrapVideo}>
         <iframe
           className={style.descriptions__video}
           src="https://www.youtube.com/embed/ScP-j6hELzY?si=WGRMnj3uLoE_6e7F"

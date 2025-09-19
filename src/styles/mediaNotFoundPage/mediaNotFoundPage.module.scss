@@ -13,19 +13,6 @@
 @media (min-width: 2000px) {
   #root .notFoundPage {
     font-size: 1.2em;
-    .navigate {
-      height: 140px;
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 20px;
-          height: 20px;
-        }
-        .navigate__iconArrow {
-          width: 12px;
-          height: 10px;
-        }
-      }
-    }
     .notFoundPage__main .notFoundPage__btn {
       width: 200px;
       height: 55px;
@@ -40,19 +27,6 @@
 @media (min-width: 2700px) {
   #root .notFoundPage {
     font-size: 1.6em;
-    .navigate {
-      height: 180px;
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 28px;
-          height: 28px;
-        }
-        .navigate__iconArrow {
-          width: 15px;
-          height: 15px;
-        }
-      }
-    }
     .notFoundPage__main {
       .notFoundPage__wrapImg {
         padding-top: 100px;
@@ -70,19 +44,6 @@
 @media (min-width: 3100px) {
   #root .notFoundPage {
     font-size: 1.8em;
-    .navigate {
-      height: 160px;
-      .navigate__wrap {
-        .navigate__linkHome .navigate__iconHouse {
-          width: 30px;
-          height: 30px;
-        }
-        .navigate__iconArrow {
-          width: 18px;
-          height: 18px;
-        }
-      }
-    }
     .notFoundPage__main .notFoundPage__btn {
       width: 340px;
       height: 75px;
@@ -107,29 +68,13 @@
     }
   }
 }
-@media (max-width: 1100px) {
-  #root .notFoundPage {
-    .navigate {
-      height: 90px;
+@media (max-width: 1300px) {
+  #root .notFoundPage .notFoundPage__main {
+    .notFoundPage__wrapImg {
+      width: 40%;
     }
-    font-size: 0.9em;
-  }
-}
-@media (max-width: 1000px) {
-  #root .notFoundPage {
-    .navigate {
-      height: 70px;
-      .navigate__wrap {
-        width: 95%;
-      }
-    }
-    .notFoundPage__main {
-      .notFoundPage__wrapImg {
-        width: 40%;
-      }
-      .notFoundPage__wrapTitle .notFoundPage__text {
-        width: 45%;
-      }
+    .notFoundPage__wrapTitle .notFoundPage__text {
+      width: 45%;
     }
   }
 }
@@ -153,14 +98,12 @@
   }
 }
 @media (max-width: 500px) {
-  #root .notFoundPage .notFoundPage__main {
-    .notFoundPage__wrapTitle {
-      .notFoundPage__title {
-        font-size: 1.8em;
-      }
-      .notFoundPage__text {
-        width: 75%;
-      }
+  #root .notFoundPage .notFoundPage__main .notFoundPage__wrapTitle {
+    .notFoundPage__title {
+      font-size: 1.8em;
+    }
+    .notFoundPage__text {
+      width: 75%;
     }
   }
 }

@@ -8,3 +8,13 @@
     transform: scale(1.1);
   }
 }
+@media (max-width: 1000px) {
+  #root .btnModal .btnModal__content {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  #root .btnModal .btnModal__content {
+    width: 95%;
+  }
+}

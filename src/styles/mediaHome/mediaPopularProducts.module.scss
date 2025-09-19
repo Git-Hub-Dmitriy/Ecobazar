@@ -61,30 +61,31 @@
     grid-gap: 3px;
     .card {
       border: 2px solid transparent;
+      .discountProcentSale {
+        width: 35%;
+        height: 30px;
+        border-radius: 10px;
+      }
       .btnAddWishlist {
-        width: 50px;
-        height: 50px;
-        left: 74%;
+        width: 45px;
+        height: 45px;
         .btnAddWishlist__icon {
           width: 20px;
           height: 20px;
         }
       }
       .btnActiveModal {
-        width: 50px;
-        height: 50px;
-        left: 74%;
-        top: 22%;
+        width: 45px;
+        height: 45px;
+        top: 90px;
         .btnActiveModal__icon {
           width: 20px;
           height: 20px;
         }
       }
       .btnAddBasket {
-        width: 50px;
-        height: 50px;
-        left: 74%;
-        top: 81%;
+        width: 45px;
+        height: 45px;
         .btnAddBasket__icon {
           width: 20px;
           height: 20px;
@@ -118,39 +119,17 @@
       height: 16px;
     }
     .popularProducts__blockProducts .card {
-      .discountProcentSale {
-        width: 35%;
-        height: 8%;
-        border-radius: 10px;
-      }
       .btnAddWishlist {
-        width: 55px;
-        height: 55px;
-        left: 78%;
-        .btnAddWishlist__icon {
-          width: 20px;
-          height: 20px;
-        }
+        width: 50px;
+        height: 50px;
       }
       .btnActiveModal {
-        width: 55px;
-        height: 55px;
-        left: 78%;
-        top: 22%;
-        .btnActiveModal__icon {
-          width: 20px;
-          height: 20px;
-        }
+        width: 50px;
+        height: 50px;
       }
       .btnAddBasket {
-        width: 55px;
-        height: 55px;
-        left: 78%;
-        top: 84%;
-        .btnAddBasket__icon {
-          width: 20px;
-          height: 20px;
-        }
+        width: 50px;
+        height: 50px;
       }
       .card__wrapContent .starsRating .starsRating__star {
         width: 15px;
@@ -169,50 +148,50 @@
       height: 20px;
     }
     .popularProducts__blockProducts .card {
+      .discountProcentSale {
+        height: 35px;
+      }
       .btnAddWishlist {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
+        .btnAddWishlist__icon {
+          width: 25px;
+          height: 25px;
+        }
       }
       .btnActiveModal {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
+        top: 110px;
+        .btnActiveModal__icon {
+          width: 25px;
+          height: 25px;
+        }
       }
       .btnAddBasket {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
+        .btnAddBasket__icon {
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }
 }
-@media (min-width: 2800px) {
+@media (min-width: 2700px) {
   #root .popularProducts .popularProducts__blockProducts .card {
     .btnAddWishlist {
-      width: 70px;
-      height: 70px;
-      .btnAddWishlist__icon {
-        width: 30px;
-        height: 30px;
-      }
+      width: 60px;
+      height: 60px;
     }
     .btnActiveModal {
-      width: 70px;
-      height: 70px;
-      .btnActiveModal__icon {
-        width: 30px;
-        height: 30px;
-      }
+      width: 60px;
+      height: 60px;
     }
     .btnAddBasket {
-      width: 70px;
-      height: 70px;
-      .btnAddBasket__icon {
-        width: 30px;
-        height: 30px;
-      }
-    }
-    .card__wrapContent .starsRating .starsRating__star {
-      width: 20px;
-      height: 20px;
+      width: 60px;
+      height: 60px;
     }
   }
 }
@@ -222,21 +201,41 @@
       .popularProducts__view
       .popularProducts__viewLink
       .popularProducts__iconArrow {
-      width: 30px;
-      height: 26px;
+      width: 26px;
+      height: 24px;
     }
     .popularProducts__blockProducts .card {
+      .discountProcentSale {
+        height: 40px;
+      }
       .btnAddWishlist {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
+        .btnAddWishlist__icon {
+          width: 30px;
+          height: 30px;
+        }
       }
       .btnActiveModal {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
+        top: 120px;
+        .btnActiveModal__icon {
+          width: 30px;
+          height: 30px;
+        }
       }
       .btnAddBasket {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
+        .btnAddBasket__icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .card__wrapContent .starsRating .starsRating__star {
+        width: 18px;
+        height: 18px;
       }
     }
   }
@@ -247,20 +246,21 @@
       border-radius: 12px;
     }
     .btnAddWishlist {
-      width: 85px;
-      height: 85px;
+      width: 75px;
+      height: 75px;
     }
     .btnActiveModal {
-      width: 85px;
-      height: 85px;
+      top: 130px;
+      width: 75px;
+      height: 75px;
     }
     .btnAddBasket {
-      width: 85px;
-      height: 85px;
+      width: 75px;
+      height: 75px;
     }
     .card__wrapContent .starsRating .starsRating__star {
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -271,8 +271,8 @@
       .popularProducts__viewLink {
       grid-column-gap: 25px;
       .popularProducts__iconArrow {
-        width: 34px;
-        height: 30px;
+        width: 30px;
+        height: 28px;
       }
     }
     .popularProducts__blockProducts {
@@ -280,34 +280,35 @@
       .card {
         border: 3px solid transparent;
         .discountProcentSale {
-          border-radius: 15px;
+          height: 45px;
         }
         .card__wrapContent .starsRating .starsRating__star {
           width: 25px;
           height: 25px;
         }
         .btnAddWishlist {
-          width: 95px;
-          height: 95px;
+          width: 80px;
+          height: 80px;
           .btnAddWishlist__icon {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
           }
         }
         .btnActiveModal {
-          width: 95px;
-          height: 95px;
+          width: 80px;
+          height: 80px;
+          top: 150px;
           .btnActiveModal__icon {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
           }
         }
         .btnAddBasket {
-          width: 95px;
-          height: 95px;
+          width: 80px;
+          height: 80px;
           .btnAddBasket__icon {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
           }
         }
       }
@@ -317,279 +318,80 @@
     }
   }
 }
-@media (max-width: 1745px) {
-  #root .popularProducts .popularProducts__blockProducts .card {
-    .btnAddWishlist {
-      left: 75%;
-    }
-    .btnActiveModal {
-      left: 75%;
-      top: 20%;
-    }
-    .btnAddBasket {
-      left: 75%;
-      top: 82%;
-    }
-  }
-}
 @media (max-width: 1600px) {
-  #root .popularProducts {
-    font-size: 0.9em;
-    .popularProducts__blockProducts .card {
-      .btnAddWishlist {
-        left: 75%;
-      }
-      .btnActiveModal {
-        left: 75%;
-        top: 20%;
-      }
-      .btnAddBasket {
-        left: 75%;
-        top: 83%;
-      }
-    }
-  }
-}
-@media (max-width: 1400px) {
-  #root .popularProducts {
-    font-size: 0.8em;
-    .popularProducts__blockProducts .card {
-      .card__wrapImg {
-        padding: 0;
-      }
-      .btnAddWishlist {
-        width: 35px;
-        height: 35px;
-      }
-      .btnActiveModal {
-        width: 35px;
-        height: 35px;
-      }
-      .btnAddBasket {
-        width: 35px;
-        height: 35px;
-        top: 82%;
-      }
-      .discountProcentSale {
-        height: 20px;
-        top: 4%;
-      }
-    }
-  }
-}
-@media (max-width: 1280px) {
-  #root
-    .popularProducts
-    .popularProducts__blockTitle
-    .popularProducts__view
-    .popularProducts__viewLink
-    .popularProducts__iconArrow {
-    width: 12px;
-    height: 10px;
-  }
-}
-@media (max-width: 1200px) {
-  #root .popularProducts .popularProducts__blockProducts .card {
-    .discountProcentSale {
-      width: 35%;
-      height: 18px;
-    }
-    .btnAddWishlist {
-      width: 30px;
-      height: 30px;
-      .btnAddWishlist__icon {
-        width: 13px;
-        height: 11px;
-      }
-    }
-    .btnActiveModal {
-      width: 30px;
-      height: 30px;
-      .btnActiveModal__icon {
-        width: 13px;
-        height: 11px;
-      }
-    }
-    .btnAddBasket {
-      width: 30px;
-      height: 30px;
-      .btnAddBasket__icon {
-        width: 13px;
-        height: 11px;
-      }
-    }
-  }
-}
-@media (max-width: 1100px) {
-  #root .popularProducts .popularProducts__blockProducts .card {
-    .card__wrapContent {
-      grid-row-gap: 5px;
-    }
-    .btnAddBasket {
-      top: 84%;
-    }
-  }
-}
-@media (max-width: 1000px) {
-  #root .popularProducts {
-    width: 95%;
-    .popularProducts__blockProducts .card {
-      .discountProcentSale {
-        font-size: 0.875em;
-      }
-      .btnAddWishlist {
-        width: 35px;
-        height: 35px;
-      }
-      .btnActiveModal {
-        width: 35px;
-        height: 35px;
-      }
-      .btnAddBasket {
-        width: 35px;
-        height: 35px;
-        top: 81%;
-      }
-    }
-  }
-}
-@media (max-width: 900px) {
-  #root .popularProducts .popularProducts__blockProducts .card {
-    .btnAddWishlist {
-      width: 30px;
-      height: 30px;
-    }
-    .btnActiveModal {
-      width: 30px;
-      height: 30px;
-    }
-    .btnAddBasket {
-      width: 30px;
-      height: 30px;
-    }
-  }
-}
-@media (max-width: 850px) {
   #root
     .popularProducts
     .popularProducts__blockProducts
     .card
     .discountProcentSale {
-    font-size: 0.8em;
-    width: 35%;
+    width: 40%;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 1300px) {
+  #root .popularProducts {
+    width: 95%;
+    .popularProducts__blockProducts .card {
+      .btnAddWishlist {
+        width: 35px;
+        height: 35px;
+        right: 10px;
+        top: 10px;
+      }
+      .btnActiveModal {
+        width: 35px;
+        height: 35px;
+        right: 10px;
+        top: 70px;
+      }
+      .btnAddBasket {
+        width: 35px;
+        height: 35px;
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
   #root .popularProducts .popularProducts__blockProducts {
     width: 75%;
     grid-template-columns: 49.5% 49.5%;
     grid-template-rows: repeat(5, auto);
     .card {
-      .discountProcentSale {
-        font-size: 0.9em;
-        height: 20px;
-      }
       .btnAddWishlist {
-        width: 38px;
-        height: 38px;
-        left: 80%;
-        .btnAddWishlist__icon {
-          width: 15px;
-          height: 12px;
-        }
+        top: 20px;
+        right: 20px;
       }
       .btnActiveModal {
-        width: 38px;
-        height: 38px;
-        left: 80%;
-        .btnActiveModal__icon {
-          width: 15px;
-          height: 12px;
-        }
+        top: 80px;
+        right: 20px;
       }
       .btnAddBasket {
-        width: 38px;
-        height: 38px;
-        left: 80%;
-        top: 83%;
-        .btnAddBasket__icon {
-          width: 15px;
-          height: 12px;
-        }
+        right: 20px;
+        bottom: 20px;
       }
     }
   }
 }
-@media (max-width: 620px) {
-  #root .popularProducts .popularProducts__blockProducts .card {
-    .btnAddWishlist {
-      left: 76%;
-    }
-    .btnActiveModal {
-      left: 76%;
-    }
-    .btnAddBasket {
-      left: 76%;
-      top: 82%;
-    }
+@media (max-width: 700px) {
+  #root .popularProducts .popularProducts__blockProducts {
+    width: 95%;
   }
 }
-@media (max-width: 520px) {
-  #root .popularProducts {
-    .popularProducts__blockTitle .popularProducts__title {
-      font-size: 1.5em;
-    }
-    .popularProducts__blockProducts {
-      width: 90%;
-      .card {
-        .btnAddWishlist {
-          left: 75%;
-        }
-        .btnActiveModal {
-          left: 75%;
-        }
-        .btnAddBasket {
-          left: 75%;
-        }
+@media (max-width: 500px) {
+  #root .popularProducts .popularProducts__blockProducts {
+    width: 95%;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 15px;
+    .card {
+      .discountProcentSale {
+        width: 25%;
       }
-    }
-  }
-}
-@media (max-width: 420px) {
-  #root .popularProducts .popularProducts__blockProducts .card {
-    .discountProcentSale {
-      width: 35%;
-      font-size: 0.75em;
-    }
-    .btnAddWishlist {
-      left: 76%;
-      width: 30px;
-      height: 30px;
-    }
-    .btnActiveModal {
-      width: 30px;
-      height: 30px;
-      left: 76%;
-    }
-    .btnAddBasket {
-      width: 30px;
-      height: 30px;
-      left: 76%;
-      top: 83%;
-    }
-  }
-}
-@media (max-width: 350px) {
-  #root .popularProducts .popularProducts__blockProducts .card {
-    .btnAddWishlist {
-      left: 73%;
-    }
-    .btnActiveModal {
-      left: 73%;
-    }
-    .btnAddBasket {
-      left: 73%;
-      top: 82%;
+      .btnActiveModal {
+        top: 100px;
+      }
     }
   }
 }

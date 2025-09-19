@@ -261,7 +261,7 @@
     height: 8%;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   #root .product .relatedProducts .relatedProducts__wrapProducts {
     grid-template-columns: 45% 45%;
     grid-template-rows: auto auto;
@@ -313,73 +313,27 @@
     width: 34%;
   }
 }
-@media (max-width: 500px) {
-  #root .product .relatedProducts .relatedProducts__wrapProducts .card {
-    .btnAddWishlist {
-      left: 76%;
-    }
-    .btnActiveModal {
-      left: 76%;
-    }
-    .btnAddBasket {
-      left: 76%;
-    }
-    .discountProcentSale {
-      width: 36%;
-      height: 20px;
-    }
-  }
-}
-@media (max-width: 450px) {
-  #root .product .relatedProducts .relatedProducts__wrapProducts .card {
-    .btnAddWishlist {
-      left: 74%;
-    }
-    .btnActiveModal {
-      left: 74%;
-    }
-    .btnAddBasket {
-      left: 74%;
-    }
-  }
-}
-@media (max-width: 400px) {
-  #root .product .relatedProducts .relatedProducts__wrapProducts .card {
-    .btnAddWishlist {
-      left: 72%;
-    }
-    .btnActiveModal {
-      left: 72%;
-    }
-    .btnAddBasket {
-      left: 72%;
-      top: 80%;
-    }
-    .discountProcentSale {
-      width: 40%;
-    }
-  }
-}
-@media (max-width: 350px) {
-  #root .product .relatedProducts .relatedProducts__wrapProducts .card {
-    .btnAddWishlist {
-      width: 30px;
-      height: 30px;
-      left: 71%;
-    }
-    .btnActiveModal {
-      width: 30px;
-      height: 30px;
-      left: 71%;
-    }
-    .btnAddBasket {
-      width: 30px;
-      height: 30px;
-      left: 71%;
-      top: 81%;
-    }
-    .discountProcentSale {
-      width: 45%;
+@media (max-width: 550px) {
+  #root .product .relatedProducts .relatedProducts__wrapProducts {
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    justify-items: center;
+    .card {
+      width: 90%;
+      .btnAddWishlist {
+        left: 86%;
+      }
+      .btnActiveModal {
+        left: 86%;
+      }
+      .btnAddBasket {
+        left: 86%;
+        top: 88%;
+      }
+      .discountProcentSale {
+        width: 22%;
+        height: 20px;
+      }
     }
   }
 }

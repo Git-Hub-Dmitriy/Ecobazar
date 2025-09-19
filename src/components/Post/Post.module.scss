@@ -8,39 +8,40 @@
   align-items: center;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
-  .post__innerDate {
-    left: 25px;
-    bottom: 200px;
-    width: 58px;
-    height: 58px;
-    background-color: white;
-    border-radius: 4px;
-    position: absolute;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50% 50%;
-    justify-items: center;
-    align-items: center;
-    .post__date {
-      display: grid;
-      justify-items: center;
-      align-items: end;
-      font-size: 1.25em;
-      color: $dark;
-      font-weight: 550;
-    }
-    .post__day {
-      display: grid;
-      justify-items: center;
-      align-items: start;
-      font-size: 0.75em;
-      color: #808080;
-      font-weight: 500;
-    }
-  }
   .post__wrapImage {
+    position: relative;
     width: 100%;
     height: auto;
+    .post__innerDate {
+      left: 25px;
+      bottom: 25px;
+      width: 58px;
+      height: 58px;
+      background-color: white;
+      border-radius: 4px;
+      position: absolute;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 50% 50%;
+      justify-items: center;
+      align-items: center;
+      .post__date {
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        font-size: 1.25em;
+        color: $dark;
+        font-weight: 550;
+      }
+      .post__day {
+        display: grid;
+        justify-items: center;
+        align-items: start;
+        font-size: 0.75em;
+        color: #808080;
+        font-weight: 500;
+      }
+    }
     .post__image {
       width: 100%;
       height: 100%;

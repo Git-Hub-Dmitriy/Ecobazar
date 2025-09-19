@@ -7,7 +7,7 @@ import { products } from "@data/products";
 import Modal from "@components/Modal/Modal";
 import ReviewProduct from "@components/ReviewProduct/ReviewProduct";
 import BtnScrollUp from "@components/Buttons/BtnScrollUp/BtnScrollUp";
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { changeModalReview } from "@store/reducers/activeModalSlice";
@@ -18,6 +18,7 @@ export const shopFiltersContext = createContext();
 export const setShopFiltersContext = createContext();
 
 export default function Layout() {
+  const [showMenu, setShowMenu] = useState(false);
   const productId = useSelector((store) => store.activeModal.productId);
   const modalReview = useSelector((store) => store.activeModal.modalReview);
   const [blogFilters, setBlogFilters] = useSearchParams();
@@ -35,17 +36,21 @@ export default function Layout() {
           <shopFiltersContext.Provider value={shopFilters}>
             <setShopFiltersContext.Provider value={setShopFilters}>
               <BtnScrollUp />
-              <Header />
-              <>
-                <Outlet />
-                <Modal
-                  activeModal={modalReview}
-                  changeModal={changeModalReview}
-                >
-                  <ReviewProduct product={product} />
-                </Modal>
-              </>
-              <Footer />
+              <Header showMenu={showMenu} setShowMenu={setShowMenu} />
+              {showMenu !== true ? (
+                <>
+                  <Outlet />
+                  <Modal
+                    activeModal={modalReview}
+                    changeModal={changeModalReview}
+                  >
+                    <ReviewProduct product={product} />
+                  </Modal>
+                  <Footer />
+                </>
+              ) : (
+                false
+              )}
             </setShopFiltersContext.Provider>
           </shopFiltersContext.Provider>
         </setBlogFiltersContext.Provider>

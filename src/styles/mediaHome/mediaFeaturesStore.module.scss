@@ -58,107 +58,39 @@
     }
   }
 }
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
   #root .features {
     font-size: 0.9em;
-  }
-}
-@media (max-width: 1440px) {
-  #root .features {
-    font-size: 0.8em;
-    grid-template-columns: repeat(4, auto);
-    grid-column-gap: 7px;
-    justify-content: space-between;
     .features__innerBox {
-      grid-column-gap: 4px;
-      .features__iconTruck {
-        width: 30px;
-        height: 25px;
-      }
-      .features__iconHeadphones {
-        width: 30px;
-        height: 25px;
-      }
-      .features__iconShoppingBag {
-        width: 30px;
-        height: 25px;
-      }
+      grid-column-gap: 6px;
+      .features__iconTruck,
+      .features__iconHeadphones,
+      .features__iconShoppingBag,
       .features__iconPackage {
         width: 30px;
-        height: 25px;
+        height: 35px;
       }
     }
   }
 }
-@media (max-width: 1160px) {
+@media (max-width: 1300px) {
   #root .features {
-    font-size: 0.75em;
-    .features__innerBox {
-      grid-template-columns: auto auto;
-      grid-column-gap: 8px;
-    }
+    width: 98%;
   }
 }
-@media (max-width: 1085px) {
-  #root .features {
-    font-size: 0.7em;
-    -moz-column-gap: 4px;
-    column-gap: 4px;
-    .features__innerBox {
-      -moz-column-gap: 4px;
-      column-gap: 4px;
-    }
-  }
-}
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   #root .features {
     width: 95%;
-    font-size: 0.8em;
-    -moz-column-gap: 6px;
-    column-gap: 6px;
-    .features__innerBox {
-      -moz-column-gap: 6px;
-      column-gap: 6px;
-    }
-  }
-}
-@media (max-width: 860px) {
-  #root .features {
-    font-size: 0.9em;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-row-gap: 18px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
     justify-content: space-around;
-  }
-}
-@media (max-width: 800px) {
-  #root .features {
-    padding: 0 0 25px 0;
-    .features__innerBox {
-      .features__iconTruck {
-        width: 26px;
-        height: 22px;
-      }
-      .features__iconHeadphones {
-        width: 26px;
-        height: 22px;
-      }
-      .features__iconShoppingBag {
-        width: 26px;
-        height: 22px;
-      }
-      .features__iconPackage {
-        width: 26px;
-        height: 22px;
-      }
-    }
   }
 }
 @media (max-width: 500px) {
   #root .features {
     grid-template-rows: repeat(4, auto);
     grid-template-columns: auto;
-    grid-row-gap: 25px;
-    font-size: 1em;
   }
 }

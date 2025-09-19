@@ -1,3 +1,14 @@
+@import "./mediaAdvertising.module.scss";
+@import "./mediaBanners.module.scss";
+@import "./mediaFeaturedProducts.module.scss";
+@import "./mediaFeaturesStore.module.scss";
+@import "./mediaHoDeals.module.scss";
+@import "./mediaLatestNews.module.scss";
+@import "./mediaPopularCategories.module.scss";
+@import "./mediaPopularProducts.module.scss";
+@import "./mediaSectionInstagram.module.scss";
+@import "./mediaStocks.module.scss";
+
 @media (min-width: 2000px) {
   #root .home {
     font-size: 1.2em;

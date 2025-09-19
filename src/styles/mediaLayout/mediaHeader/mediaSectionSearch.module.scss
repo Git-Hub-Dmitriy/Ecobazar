@@ -2,7 +2,7 @@
 @media (hover: hover) {
   #root .sectionSearch {
     .search .search__button:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       background-color: $dark;
     }
     .sectionSearch__wrapBasket {
@@ -18,7 +18,7 @@
 @media (hover: none) {
   #root .sectionSearch {
     .search .search__button:active {
-      transform: scale(1.1);
+      transform: scale(1.05);
       background-color: $dark;
     }
     .sectionSearch__wrapBasket {
@@ -50,6 +50,22 @@
       }
       .search__button {
         height: 48px;
+      }
+      .search__listProducts {
+        width: 160%;
+        height: 100px;
+        top: 100px;
+        transform: translateX(-5%);
+      }
+      .search__listProducts_visible {
+        width: 160%;
+        height: 500px;
+        top: 100px;
+        transform: translateX(-5%);
+        .search__productLink .search__innerProductImage .search__productImg {
+          width: 150px;
+          height: 150px;
+        }
       }
     }
     .sectionSearch__wrapBasket {
@@ -125,6 +141,12 @@
       .search__button {
         height: 65px;
       }
+      .search__listProducts {
+        height: 150px;
+      }
+      .search__listProducts_visible {
+        height: 600px;
+      }
     }
     .sectionSearch__wrapBasket {
       grid-column-gap: 40px;
@@ -166,6 +188,12 @@
       }
       .search__button {
         height: 75px;
+      }
+      .search__listProducts {
+        height: 180px;
+      }
+      .search__listProducts_visible {
+        height: 700px;
       }
     }
     .sectionSearch__wrapBasket {
@@ -268,6 +296,12 @@
     width: 95%;
   }
 }
+@media (max-width: 1000px) {
+  #root .sectionSearch .search .search__listProducts_visible {
+    width: 190%;
+    transform: translateX(-11%);
+  }
+}
 @media (max-width: 900px) {
   #root .sectionSearch {
     grid-template-columns: auto auto;
@@ -278,37 +312,27 @@
       width: 60%;
       order: 3;
       grid-column: 1 / 3;
+      .search__listProducts_visible {
+        width: 130%;
+        transform: translateX(8%);
+        height: 350px;
+        .search__productLink {
+          grid-template-columns: 20% auto 20%;
+          .search__innerProductImage .search__productImg {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+      .search__listProducts {
+        width: 130%;
+        transform: translateX(8%);
+      }
     }
   }
 }
 @media (max-width: 700px) {
-  #root .sectionSearch .search {
-    width: 80%;
-  }
-}
-@media (max-width: 500px) {
   #root .sectionSearch {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    .logo {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      justify-content: center;
-    }
-    .search {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      width: 100%;
-    }
-    .sectionSearch__wrapBasket {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      justify-content: space-between;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto;
-      .sectionSearch__iconSeparator {
-        display: none;
-      }
-    }
+    display: none;
   }
 }
