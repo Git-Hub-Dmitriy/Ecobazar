@@ -11,7 +11,7 @@ export default function BtnAddWishlist({ product }) {
   });
   const dispatch = useDispatch();
   const wishlist = useSelector((store) => store.wishlist.wishlist);
-  const found = wishlist?.filter((item) => item.id === product.id);
+  const foundProduct = wishlist?.find((item) => item?.id === product?.id);
 
   useEffect(() => {
     if (modal.active === true) {
@@ -35,12 +35,12 @@ export default function BtnAddWishlist({ product }) {
     <>
       <button
         onClick={() => {
-          if (!found) {
+          if (!foundProduct) {
             setModal({
               active: true,
               message: "This product added in your wishlist",
             });
-            dispatch(addProductWishlist({ product: product, id: product.id }));
+            dispatch(addProductWishlist({ product: product }));
           } else {
             setModal({
               active: true,
@@ -55,8 +55,8 @@ export default function BtnAddWishlist({ product }) {
       <div
         className={
           modal.active
-            ? `${style.btnModal} ${style.btnModal_active}`
-            : style.btnModal
+            ? `${style.wishlistModal} ${style.wishlistModal_active}`
+            : style.wishlistModal
         }
         onClick={() =>
           setModal({
@@ -68,8 +68,8 @@ export default function BtnAddWishlist({ product }) {
         <div
           className={
             modal.active
-              ? `${style.btnModal__content} ${style.btnModal__content_active}`
-              : style.btnModal__content
+              ? `${style.wishlistModal__content} ${style.wishlistModal__content_active}`
+              : style.wishlistModal__content
           }
           onClick={(e) => e.stopPropagation()}
         >

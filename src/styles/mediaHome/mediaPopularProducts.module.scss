@@ -1,58 +1,34 @@
 @import "@styles/variables.module.scss";
 
 @media (hover: hover) {
-  #root .popularProducts {
-    .popularProducts__blockProducts .card {
-      .btnAddWishlist:hover {
-        .btnAddWishlist__icon {
-          transform: scale(1.3);
-        }
-      }
-      .btnActiveModal:hover {
-        .btnActiveModal__icon {
-          transform: scale(1.3);
-        }
-      }
-    }
+  #root
+    .popularProducts
     .popularProducts__blockTitle
-      .popularProducts__view
-      .popularProducts__viewLink:hover {
-      .popularProducts__viewText {
-        color: black;
-        font-size: 1.2em;
-      }
-      .popularProducts__iconArrow {
-        stroke: #000000;
-        transform: scale(1.2);
-      }
+    .popularProducts__view
+    .popularProducts__viewLink:hover {
+    .popularProducts__viewText {
+      color: black;
+      font-size: 1.2em;
+    }
+    .popularProducts__iconArrow {
+      stroke: #000000;
+      transform: scale(1.2);
     }
   }
 }
 @media (hover: none) {
-  #root .popularProducts {
-    .popularProducts__blockProducts .card {
-      .btnAddWishlist:active {
-        .btnAddWishlist__icon {
-          transform: scale(1.3);
-        }
-      }
-      .btnActiveModal:active {
-        .btnActiveModal__icon {
-          transform: scale(1.3);
-        }
-      }
-    }
+  #root
+    .popularProducts
     .popularProducts__blockTitle
-      .popularProducts__view
-      .popularProducts__viewLink:active {
-      .popularProducts__viewText {
-        color: black;
-        font-size: 1.2em;
-      }
-      .popularProducts__iconArrow {
-        stroke: #000000;
-        transform: scale(1.2);
-      }
+    .popularProducts__view
+    .popularProducts__viewLink:active {
+    .popularProducts__viewText {
+      color: black;
+      font-size: 1.2em;
+    }
+    .popularProducts__iconArrow {
+      stroke: #000000;
+      transform: scale(1.2);
     }
   }
 }

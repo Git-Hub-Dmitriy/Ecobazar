@@ -1,32 +1,4 @@
 @import "@styles/variables.module.scss";
-@media (hover: hover) {
-  #root .shop .shop__gridProducts .listProducts .card {
-    .btnAddWishlist:hover {
-      .btnAddWishlist__icon {
-        transform: scale(1.2);
-      }
-    }
-    .btnActiveModal:hover {
-      .btnActiveModal__icon {
-        transform: scale(1.2);
-      }
-    }
-  }
-}
-@media (hover: none) {
-  #root .shop .shop__gridProducts .listProducts .card {
-    .btnAddWishlist:active {
-      .btnAddWishlist__icon {
-        transform: scale(1.2);
-      }
-    }
-    .btnActiveModal:active {
-      .btnActiveModal__icon {
-        transform: scale(1.2);
-      }
-    }
-  }
-}
 @media (min-width: 2000px) {
   #root .shop .shop__gridProducts .listProducts {
     grid-row-gap: 3px;

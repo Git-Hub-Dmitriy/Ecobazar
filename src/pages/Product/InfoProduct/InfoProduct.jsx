@@ -42,16 +42,8 @@ export default function InfoProduct({ product, index }) {
           </h3>
         </div>
         <div className={style.infoProduct__wrapPrice}>
-          <h2
-            className={
-              product.oldPrice !== true
-                ? style.infoProduct__price
-                : `${style.infoProduct__price} ${style.infoProduct__price_through}`
-            }
-          >
-            {product.price}
-          </h2>
-          <h2 className={style.infoProduct__oldPrice}>{product.oldPrice}</h2>
+          <h2 className={style.infoProduct__price}>{product.oldPrice}</h2>
+          <h2 className={style.infoProduct__oldPrice}>{product.price}</h2>
           <h2 className={style.infoProduct__discount}>
             {product.oldPrice ? `${discount.toFixed(0)}% Off` : ""}
           </h2>

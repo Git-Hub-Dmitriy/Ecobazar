@@ -10,7 +10,7 @@ export default function BtnAddBasket({ activeCard, product }) {
   const dispatch = useDispatch();
   const amountProduct = useSelector((store) => store.counter.value);
   const shopping = useSelector((store) => store.shoppingCart.shoppingCart);
-  const found = shopping.find((item) => item.id === product.id);
+  const found = shopping?.find((item) => item?.id === product?.id);
   const [modal, setModal] = useState({
     active: false,
     message: null,
@@ -49,6 +49,7 @@ export default function BtnAddBasket({ activeCard, product }) {
               );
               dispatch(resetProduct(1));
             } else {
+              dispatch(resetProduct(1));
               setModal({
                 active: true,
                 message: "Sorry, this product ended",
@@ -60,6 +61,7 @@ export default function BtnAddBasket({ activeCard, product }) {
               message:
                 "this product already has been added in your shopping cart",
             });
+            dispatch(resetProduct(1));
           }
         }}
         className={style.btnAddBasket}
@@ -73,8 +75,8 @@ export default function BtnAddBasket({ activeCard, product }) {
       <div
         className={
           modal.active
-            ? classNames(style.btnModal, style.active)
-            : style.btnModal
+            ? classNames(style.addBasketModal, style.active)
+            : style.addBasketModal
         }
         onClick={() =>
           setModal({
@@ -86,8 +88,8 @@ export default function BtnAddBasket({ activeCard, product }) {
         <div
           className={
             modal.active
-              ? classNames(style.btnModal__content, style.active)
-              : style.btnModal__content
+              ? classNames(style.addBasketModal__content, style.active)
+              : style.addBasketModal__content
           }
           onClick={(e) => e.stopPropagation()}
         >

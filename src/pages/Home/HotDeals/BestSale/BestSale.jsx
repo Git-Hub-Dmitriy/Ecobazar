@@ -58,7 +58,7 @@ export default function BestSale({ product, active, setActive }) {
       <div className={style.bestSale__textSale}>Best Sale</div>
       <div className={style.bestSale__wrapImage}>
         <div className={style.bestSale__wrapButtonAcquire}>
-          <BtnAddWishlist />
+          <BtnAddWishlist product={product} />
           <BtnAddBasket product={product} activeCard={product.id} />
           <BtnActiveModal id={product.id} />
         </div>

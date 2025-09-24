@@ -1,14 +1,92 @@
 import * as style from "./Login.module.scss";
 import Navigate from "@components/Navigate/Navigate";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import IconPasswordEye from "@assets/iconPasswordEye.svg";
 import { useRef, useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { changeAuthorization } from "@store/reducers/authorizationSlice";
+import { users } from "@data/users";
 
 export default function Login() {
+  const dispatch = useDispatch();
+  const [auth, setAuth] = useState({
+    login: "",
+    password: "",
+  });
+  const [message, setMessage] = useState({
+    messagePass: null,
+    messageLogin: null,
+    rememberUser: false,
+    incorrect: false,
+  });
   const btnRef = useRef();
   const passRef = useRef();
   const [switchType, setSwitchType] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const fromPage = location.state?.from?.pathname || "/";
+
+  function submitLogin() {
+    const user = users.find(
+      (user) =>
+        user.login.toLowerCase() === auth.login.toLowerCase() &&
+        user.password.toLowerCase() === auth.password.toLowerCase()
+    );
+    if (auth.login && auth.password) {
+      if (user) {
+        if (user.login && user.password) {
+          setMessage({
+            ...message,
+            messageLogin: null,
+            messagePass: null,
+            incorrect: false,
+            rememberUser: false,
+          });
+          setAuth({
+            ...auth,
+            login: "",
+            password: "",
+          });
+          setSwitchType(false);
+          navigate(fromPage, { replace: true });
+          dispatch(changeAuthorization(true));
+        }
+      } else {
+        setMessage({
+          ...message,
+          incorrect: true,
+          messageLogin: "incorrect login or password",
+          messagePass: "please try again",
+        });
+        setAuth({
+          ...auth,
+          login: "",
+          password: "",
+        });
+      }
+    } else {
+      setMessage({
+        ...message,
+        messageLogin: "enter your login",
+        messagePass: "enter your password",
+      });
+    }
+    if (auth.login && !auth.password) {
+      setMessage({
+        ...message,
+        messageLogin: null,
+        messagePass: "enter your password",
+      });
+    }
+    if (!auth.login && auth.password) {
+      setMessage({
+        ...message,
+        messageLogin: "enter your login",
+        messagePass: null,
+      });
+    }
+  }
 
   useEffect(() => {
     const type =
@@ -31,24 +109,47 @@ export default function Login() {
         <h1 className={style.login__title}>Sign In</h1>
         <form
           name="login"
-          method="post"
-          action=""
+          onSubmit={(e) => {
+            e.preventDefault();
+            submitLogin();
+          }}
           className={style.login__form}
         >
           <input
-            name="email"
-            id="email"
-            autoComplete="on"
-            placeholder="Email"
-            className={style.login__email}
-            type="email"
+            onChange={(e) => setAuth({ ...auth, login: e.target.value })}
+            name="login"
+            id="login"
+            value={auth.login}
+            autoComplete="yes"
+            autoSave="yes"
+            placeholder={
+              message.messageLogin === null ? "Login" : message.messageLogin
+            }
+            className={
+              message.messageLogin === null
+                ? style.login__email
+                : `${style.login__email} ${style.login__email_red}`
+            }
+            type="text"
           />
-          <div className={style.login__innerPassword}>
+          <div
+            className={
+              message.messagePass === null
+                ? style.login__innerPassword
+                : `${style.login__innerPassword} ${style.login__innerPassword_red}`
+            }
+          >
             <input
               ref={passRef}
               name="password"
               id="password"
-              placeholder="Password"
+              autoComplete="no"
+              onChange={(e) => setAuth({ ...auth, password: e.target.value })}
+              value={auth.password}
+              autoSave="no"
+              placeholder={
+                message.messagePass === null ? "Password" : message.messagePass
+              }
               className={style.login__password}
               type="password"
             />
@@ -65,9 +166,16 @@ export default function Login() {
           <div className={style.login__wrapRememberBtn}>
             <label className={style.login__innerCheckbox}>
               <input
-                name="login"
+                onChange={() =>
+                  setMessage({
+                    ...message,
+                    rememberUser: !message.rememberUser,
+                  })
+                }
+                name="loginCheckbox"
                 className={style.login__check}
                 type="checkbox"
+                checked={message.rememberUser}
               />
               Remember me
             </label>

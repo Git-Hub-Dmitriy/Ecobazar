@@ -3,6 +3,8 @@ export const users = [
     id: 0,
     name: "Dennis",
     surname: "Nzioki",
+    login: "admin",
+    password: "admin",
     group: "Customer",
     address: "4140 Parker Rd. Allentown, New Runda 31134",
     email: "dennisnzioki@gmail.com",

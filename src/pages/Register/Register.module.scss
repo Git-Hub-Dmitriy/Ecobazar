@@ -45,29 +45,65 @@
           width: 100%;
           padding: 14px 16px 14px 16px;
           font-size: 1em;
-          color: #999999;
+          color: $dark;
           font-weight: 500;
+          appearance: none;
+          border-radius: 20px;
+          outline: 1px solid transparent;
+          &::placeholder {
+            font-size: 1em;
+            color: #999999;
+            font-weight: 500;
+          }
+        }
+        .register__input_login {
+          outline: 1px solid red;
+          &::placeholder {
+            color: red;
+          }
         }
         .register__innerInput {
           width: 100%;
           display: grid;
-          grid-template-columns: auto 3%;
+          grid-template-columns: auto 5%;
           grid-template-rows: auto;
           align-items: center;
           justify-items: center;
+          border-radius: 20px;
+          outline: 1px solid transparent;
           .register__input {
             box-sizing: border-box;
             width: 100%;
             font-size: 1em;
-            color: #999999;
+            color: $dark;
             font-weight: 500;
+            appearance: none;
             padding: 14px 16px 14px 16px;
+            &::placeholder {
+              font-size: 1em;
+              color: #999999;
+              font-weight: 500;
+            }
           }
           .register__iconEye {
             width: 16px;
             height: 12px;
             cursor: pointer;
             transition: all 0.3s;
+            display: grid;
+            justify-items: start;
+          }
+        }
+        .register__innerInput_passRed {
+          outline: 1px solid red;
+          .register__input::placeholder {
+            color: red;
+          }
+        }
+        .register__innerInput_confirmPassRed {
+          outline: 1px solid red;
+          .register__input::placeholder {
+            color: red;
           }
         }
       }

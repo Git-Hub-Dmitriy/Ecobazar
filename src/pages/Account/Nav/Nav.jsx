@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import * as style from "./Nav.module.scss";
 import IconDashboard from "@assets/iconDashboard.svg";
 import IconOrderHistory from "@assets/iconOrderHistory.svg";
@@ -6,8 +6,13 @@ import IconWishlist from "@assets/iconHeart.svg";
 import IconShoppingCart from "@assets/iconBasket.svg";
 import IconSettings from "@assets/iconSettings.svg";
 import IconLogout from "@assets/iconLogout.svg";
+import { changeAuthorization } from "@store/reducers/authorizationSlice";
+import { useDispatch } from "react-redux";
 
 export default function Nav() {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const activeLink = ({ isActive }) =>
     isActive ? style.activeLink : style.notActiveLink;
 
@@ -35,7 +40,13 @@ export default function Nav() {
           <IconSettings className={style.nav__icon_fill} />
           Settings
         </NavLink>
-        <div className={style.nav__logOut}>
+        <div
+          onClick={() => {
+            dispatch(changeAuthorization(false));
+            navigate("/", { replace: true });
+          }}
+          className={style.nav__logOut}
+        >
           <IconLogout className={style.nav__icon_fill} fill={"#b3afaf"} />
           Log-out
         </div>

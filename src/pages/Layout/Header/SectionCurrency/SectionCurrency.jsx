@@ -3,6 +3,7 @@ import IconArrow from "@assets/iconArrowDown.svg";
 import { NavLink } from "react-router-dom";
 import IconMarker from "@assets/iconMarkerAddress.svg";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function SectionCurrency({
   languages,
@@ -12,6 +13,9 @@ export default function SectionCurrency({
 }) {
   const [activeLang, setActiveLang] = useState(false);
   const [activeCurrency, setActiveCurrency] = useState(false);
+  const authorization = useSelector(
+    (store) => store.authorization.authorization
+  );
 
   return (
     <section className={style.sectionCurrency}>
@@ -24,7 +28,13 @@ export default function SectionCurrency({
           Store Location: Lincoln- 344, Illinois, Chicago, USA
         </h2>
       </div>
-      <div className={style.sectionCurrency__wrapCurrency}>
+      <div
+        className={
+          authorization === false
+            ? style.sectionCurrency__wrapCurrency
+            : `${style.sectionCurrency__wrapCurrency} ${style.sectionCurrency__wrapCurrency_auth}`
+        }
+      >
         <div className={style.sectionCurrency__wrapLanguage}>
           <div
             tabIndex={0}
@@ -97,12 +107,16 @@ export default function SectionCurrency({
             </ul>
           </div>
         </div>
-        <NavLink
-          to={"/login"}
-          className={style.sectionCurrency__innerLinkLogin}
-        >
-          Sign in / Sign Up
-        </NavLink>
+        {authorization === false ? (
+          <NavLink
+            to={"/login"}
+            className={style.sectionCurrency__innerLinkLogin}
+          >
+            Sign in / Sign Up
+          </NavLink>
+        ) : (
+          false
+        )}
       </div>
     </section>
   );

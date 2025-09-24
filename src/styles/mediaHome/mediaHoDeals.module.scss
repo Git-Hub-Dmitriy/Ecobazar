@@ -2,40 +2,14 @@
 
 @media (hover: hover) {
   #root .hotDeals {
-    .bestSale {
-      .bestSale__wrapImage .bestSale__wrapButtonAcquire {
-        .btnAddWishlist:hover {
-          .btnAddWishlist__icon {
-            transform: scale(1.2);
-          }
-        }
-        .btnAddBasket:hover {
-          transform: scale(1.1);
-          background-color: #1a1a1a;
-          .btnAddBasket__title {
-            font-size: 1.1em;
-          }
-          .btnAddBasket__icon {
-            transform: scale(1.2);
-          }
-        }
-        .btnActiveModal:hover {
-          .btnActiveModal__icon {
-            transform: scale(1.2);
-          }
-        }
-      }
-    }
-    .hotDeals__rowBottom .card {
-      .btnAddWishlist:hover {
-        .btnAddWishlist__icon {
-          transform: scale(1.2);
-        }
-      }
-      .btnActiveModal:hover {
-        .btnActiveModal__icon {
-          transform: scale(1.2);
-        }
+    .bestSale
+      .bestSale__wrapImage
+      .bestSale__wrapButtonAcquire
+      .btnAddBasket:hover {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      .btnAddBasket__title {
+        font-size: 1.1em;
       }
     }
     .hotDeals__rowTop .hotDeals__innerArrowLink:hover {
@@ -52,28 +26,14 @@
 }
 @media (hover: none) {
   #root .hotDeals {
-    .bestSale {
-      .bestSale__wrapImage .bestSale__wrapButtonAcquire {
-        .btnAddWishlist:active {
-          .btnAddWishlist__icon {
-            transform: scale(1.2);
-          }
-        }
-        .btnAddBasket:active {
-          transform: scale(1.1);
-          background-color: #1a1a1a;
-          .btnAddBasket__title {
-            font-size: 1.1em;
-          }
-          .btnAddBasket__icon {
-            transform: scale(1.2);
-          }
-        }
-        .btnActiveModal:active {
-          .btnActiveModal__icon {
-            transform: scale(1.2);
-          }
-        }
+    .bestSale
+      .bestSale__wrapImage
+      .bestSale__wrapButtonAcquire
+      .btnAddBasket:active {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      .btnAddBasket__title {
+        font-size: 1.1em;
       }
     }
     .hotDeals__rowTop .hotDeals__innerArrowLink:active {
@@ -84,18 +44,6 @@
       .hotDeals__greenArrow {
         stroke: #1a1a1a;
         transform: scale(1.2);
-      }
-    }
-    .hotDeals__rowBottom .card {
-      .btnAddWishlist:active {
-        .btnAddWishlist__icon {
-          transform: scale(1.2);
-        }
-      }
-      .btnActiveModal:active {
-        .btnActiveModal__icon {
-          transform: scale(1.2);
-        }
       }
     }
   }

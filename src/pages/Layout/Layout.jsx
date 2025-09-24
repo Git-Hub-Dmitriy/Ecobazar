@@ -1,5 +1,5 @@
 import * as style from "./Layout.module.scss";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "@pages/Layout/Header/Header";
 import Footer from "@pages/Layout/Footer/Footer";
@@ -7,7 +7,7 @@ import { products } from "@data/products";
 import Modal from "@components/Modal/Modal";
 import ReviewProduct from "@components/ReviewProduct/ReviewProduct";
 import BtnScrollUp from "@components/Buttons/BtnScrollUp/BtnScrollUp";
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { changeModalReview } from "@store/reducers/activeModalSlice";
@@ -24,6 +24,21 @@ export default function Layout() {
   const [blogFilters, setBlogFilters] = useSearchParams();
   const [shopFilters, setShopFilters] = useSearchParams();
   const product = products?.find((item) => item.id === productId);
+  const authorization = useSelector(
+    (store) => store.authorization.authorization
+  );
+  const location = useLocation();
+
+  useEffect(() => {
+    if (authorization === true) {
+      if (location.pathname === "login") {
+        window.onpopstate = function (event) {
+          history.pushState(null, null, location.href);
+          history.go(1);
+        };
+      }
+    }
+  }, [location]);
 
   return (
     <>

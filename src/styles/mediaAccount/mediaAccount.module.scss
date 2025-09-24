@@ -2,9 +2,9 @@
 @import "./mediaNav.module.scss";
 @import "./mediaOrderHistory.module.scss";
 @import "./mediaSettings.module.scss";
-@import "./mediaShoppingCart.module.scss";
+@import "./mediaShopping.module.scss";
 @import "./mediaSingleOrder.module.scss";
-@import "./mediaWishlist.module.scss";
+@import "./mediaAccountWishlist.module.scss";
 
 @media (hover: hover) {
   #root .account {
@@ -230,13 +230,13 @@
     font-size: 2.2em;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   #root .account .account__container {
     width: 95%;
     margin: 20px 0 50px 0;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   #root .account .account__container {
     grid-template-columns: auto;
     grid-column-gap: 0;

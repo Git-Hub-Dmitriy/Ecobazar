@@ -1,50 +1,32 @@
 @import "@styles/variables.module.scss";
 
 @media (hover: hover) {
-  #root .featuredProducts {
-    .featuredProducts__head .featuredProducts__innerLink:hover {
-      .featuredProducts__textLink {
-        color: #1a1a1a;
-        font-size: 1.2em;
-      }
-      .featuredProducts__iconArrow {
-        stroke: #1a1a1a;
-        transform: scale(1.2);
-      }
+  #root
+    .featuredProducts
+    .featuredProducts__head
+    .featuredProducts__innerLink:hover {
+    .featuredProducts__textLink {
+      color: #1a1a1a;
+      font-size: 1.2em;
     }
-    .btnAddWishlist:hover {
-      .btnAddWishlist__icon {
-        transform: scale(1.2);
-      }
-    }
-    .btnActiveModal:hover {
-      .btnActiveModal__icon {
-        transform: scale(1.2);
-      }
+    .featuredProducts__iconArrow {
+      stroke: #1a1a1a;
+      transform: scale(1.2);
     }
   }
 }
 @media (hover: none) {
-  #root .featuredProducts {
-    .featuredProducts__head .featuredProducts__innerLink:active {
-      .featuredProducts__textLink {
-        color: #1a1a1a;
-        font-size: 1.2em;
-      }
-      .featuredProducts__iconArrow {
-        stroke: #1a1a1a;
-        transform: scale(1.2);
-      }
+  #root
+    .featuredProducts
+    .featuredProducts__head
+    .featuredProducts__innerLink:active {
+    .featuredProducts__textLink {
+      color: #1a1a1a;
+      font-size: 1.2em;
     }
-    .btnAddWishlist:active {
-      .btnAddWishlist__icon {
-        transform: scale(1.2);
-      }
-    }
-    .btnActiveModal:active {
-      .btnActiveModal__icon {
-        transform: scale(1.2);
-      }
+    .featuredProducts__iconArrow {
+      stroke: #1a1a1a;
+      transform: scale(1.2);
     }
   }
 }

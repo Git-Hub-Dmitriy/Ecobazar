@@ -15,8 +15,8 @@ const wishlistSlice = createSlice({
       };
     },
     addProductWishlist(state, action) {
-      const found = state.wishlist?.find(
-        (item) => item.id === action.payload.id
+      const found = state.wishlist.find(
+        (item) => item.id === action.payload.product.id
       );
       if (!found) {
         return {

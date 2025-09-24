@@ -28,7 +28,7 @@ export default function Wishlist() {
               <h4 className={style.wishlist__subtitle}>STOCK STATUS</h4>
             </div>
             <div className={style.wishlist__wrapProducts}>
-              {wishlist.map((product) => {
+              {wishlist?.map((product) => {
                 return (
                   <div
                     key={product.id}

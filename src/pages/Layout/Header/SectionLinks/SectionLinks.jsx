@@ -17,14 +17,6 @@ export default function PagesLinks() {
   const dispatch = useDispatch();
   const resetBlogFilters = useContext(setBlogFiltersContext);
   const resetFiltersShop = useContext(setShopFiltersContext);
-  const authorizate = true;
-  let gridColumnGap = 8;
-  if (window.innerWidth >= 2000) {
-    gridColumnGap = 20;
-  }
-  if (window.innerWidth >= 3100) {
-    gridColumnGap = 30;
-  }
 
   const activeLink = ({ isActive }) =>
     isActive ? style.active : style.notActive;
@@ -101,14 +93,7 @@ export default function PagesLinks() {
             </NavLink>
           </li>
         </ul>
-        <div
-          style={
-            authorizate !== null
-              ? { gridColumnGap: `${gridColumnGap}px` }
-              : undefined
-          }
-          className={style.sectionLinks__innerPhone}
-        >
+        <div className={style.sectionLinks__innerPhone}>
           <Link className={style.sectionBottom__phone} to="tel:2195550114">
             <IconPhone
               stroke={"#ffffff"}
@@ -116,17 +101,15 @@ export default function PagesLinks() {
             />
             (219) 555-0114
           </Link>
-          {authorizate !== null ? (
-            <NavLink
-              className={style.sectionLinks__account}
-              to="account/dashboard"
-            >
-              <IconProfile
-                stroke={"#ffffff"}
-                className={style.sectionLinks__iconUser}
-              />
-            </NavLink>
-          ) : undefined}
+          <NavLink
+            className={style.sectionLinks__account}
+            to="account/dashboard"
+          >
+            <IconProfile
+              stroke={"#ffffff"}
+              className={style.sectionLinks__iconUser}
+            />
+          </NavLink>
         </div>
       </div>
     </section>

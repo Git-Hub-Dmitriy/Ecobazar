@@ -1,7 +1,14 @@
 import * as style from "./HidSection.module.scss";
 import { NavLink } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { changeAuthorization } from "@store/reducers/authorizationSlice";
 
 export default function HidSection({ setShowMenu }) {
+  const authorization = useSelector(
+    (store) => store.authorization.authorization
+  );
+  const dispatch = useDispatch();
+
   return (
     <section className={style.hidSection}>
       <NavLink
@@ -60,13 +67,25 @@ export default function HidSection({ setShowMenu }) {
       >
         Wishlist
       </NavLink>
-      <NavLink
-        onClick={() => setShowMenu(false)}
-        to="login"
-        className={style.hidSection__link_login}
-      >
-        Login
-      </NavLink>
+      {authorization === false ? (
+        <NavLink
+          onClick={() => setShowMenu(false)}
+          to="login"
+          className={style.hidSection__link_login}
+        >
+          Login
+        </NavLink>
+      ) : (
+        <div
+          onClick={() => {
+            setShowMenu(false);
+            dispatch(changeAuthorization(false));
+          }}
+          className={style.hidSection__link_login}
+        >
+          Log Out
+        </div>
+      )}
     </section>
   );
 }

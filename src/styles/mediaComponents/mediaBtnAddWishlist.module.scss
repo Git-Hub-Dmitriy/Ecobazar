@@ -1,15 +1,15 @@
 @media (hover: hover) {
-  #root .btnAddBasket:hover {
+  #root .btnAddWishlist:hover {
     transform: scale(1.2);
   }
 }
 @media (hover: none) {
-  #root .btnAddBasket:active {
+  #root .btnAddWishlist:active {
     transform: scale(1.2);
   }
 }
 @media (max-width: 900px) {
-  #root .addBasketModal .addBasketModal__content {
-    width: 90%;
+  #root .wishlistModal .wishlistModal__content {
+    width: 95%;
   }
 }

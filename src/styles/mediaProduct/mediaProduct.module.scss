@@ -5,39 +5,18 @@
 @media (hover: hover) {
   #root .product {
     .product__wrapProduct {
-      .infoProduct .infoProduct__info {
-        .infoProduct__wrapSocial .socialMedia {
-          .socialMedia__iconFacebook:hover {
+      .infoProduct .infoProduct__info .infoProduct__wrapBtn {
+        .amountProduct {
+          .amountProduct__minus:hover {
             transform: scale(1.2);
           }
-          .socialMedia__iconTwitter:hover {
-            transform: scale(1.2);
-          }
-          .socialMedia__iconPatreon:hover {
-            transform: scale(1.2);
-          }
-          .socialMedia__iconInstagram:hover {
+          .amountProduct__plus:hover {
             transform: scale(1.2);
           }
         }
-        .infoProduct__wrapBtn {
-          .amountProduct {
-            .amountProduct__minus:hover {
-              transform: scale(1.2);
-            }
-            .amountProduct__plus:hover {
-              transform: scale(1.2);
-            }
-          }
-          .btnAddBasket:hover {
-            background-color: #1a1a1a;
-            transform: scale(1.1);
-          }
-          .btnAddWishlist:hover {
-            .btnAddWishlist__icon {
-              transform: scale(1.2);
-            }
-          }
+        .btnAddBasket:hover {
+          background-color: #1a1a1a;
+          transform: scale(1.05);
         }
       }
     }
@@ -46,58 +25,23 @@
       .productFeedback__btnMoreUsers:hover {
       transform: scale(1.2);
     }
-    .relatedProducts .relatedProducts__wrapProducts {
-      .card {
-        .btnAddWishlist:hover {
-          .btnAddWishlist__icon {
-            transform: scale(1.2);
-          }
-        }
-        .btnActiveModal:hover {
-          .btnActiveModal__icon {
-            transform: scale(1.2);
-          }
-        }
-      }
-    }
   }
 }
 @media (hover: none) {
   #root .product {
     .product__wrapProduct {
-      .infoProduct .infoProduct__info {
-        .infoProduct__wrapSocial .socialMedia {
-          .socialMedia__iconFacebook:active {
+      .infoProduct .infoProduct__info .infoProduct__wrapBtn {
+        .amountProduct {
+          .amountProduct__minus:active {
             transform: scale(1.2);
           }
-          .socialMedia__iconTwitter:active {
-            transform: scale(1.2);
-          }
-          .socialMedia__iconPatreon:active {
-            transform: scale(1.2);
-          }
-          .socialMedia__iconInstagram:active {
+          .amountProduct__plus:active {
             transform: scale(1.2);
           }
         }
-        .infoProduct__wrapBtn {
-          .amountProduct {
-            .amountProduct__minus:active {
-              transform: scale(1.2);
-            }
-            .amountProduct__plus:active {
-              transform: scale(1.2);
-            }
-          }
-          .btnAddBasket:active {
-            background-color: #1a1a1a;
-            transform: scale(1.1);
-          }
-          .btnAddWishlist:active {
-            .btnAddWishlist__icon {
-              transform: scale(1.2);
-            }
-          }
+        .btnAddBasket:active {
+          background-color: #1a1a1a;
+          transform: scale(1.05);
         }
       }
     }
@@ -105,20 +49,6 @@
       .productFeedback
       .productFeedback__btnMoreUsers:active {
       transform: scale(1.2);
-    }
-    .relatedProducts .relatedProducts__wrapProducts {
-      .card {
-        .btnAddWishlist:active {
-          .btnAddWishlist__icon {
-            transform: scale(1.2);
-          }
-        }
-        .btnActiveModal:active {
-          .btnActiveModal__icon {
-            transform: scale(1.2);
-          }
-        }
-      }
     }
   }
 }

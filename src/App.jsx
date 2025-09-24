@@ -24,6 +24,7 @@ import Wishlist from "@pages/Wishlist/Wishlist";
 import ShoppingCart from "@pages/ShoppingCart/ShoppingCart";
 import SingleOrder from "@pages/Account/SingleOrder/SingleOrder";
 import Checkout from "@pages/Checkout/Checkout";
+import RequireAuth from "@pages/hoc/RequireAuth";
 import {
   Route,
   createBrowserRouter,
@@ -50,18 +51,24 @@ const rout = createBrowserRouter(
       <Route path="blog/:id" element={<SinglePost />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="account/*" element={<Account />}>
-        <Route path="dashboard" element={<Dashboard />} />
-        <Route path="orderHistory" element={<OrderHistory />} />
-        <Route path="orderHistory/:id" element={<SingleOrder />} />
-        <Route path="accountWishlist" element={<AccountWishlist />} />
-        <Route path="shopping" element={<Shopping />} />
-        <Route path="settings" element={<Settings />} />
+
+      <Route element={<RequireAuth />}>
+        <Route path="account/*" element={<Account />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="orderHistory" element={<OrderHistory />} />
+          <Route path="orderHistory/:id" element={<SingleOrder />} />
+          <Route path="accountWishlist" element={<AccountWishlist />} />
+          <Route path="shopping" element={<Shopping />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
       </Route>
+
       <Route path="faqs" element={<Faqs />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
-      <Route path="wishlist" element={<Wishlist />} />
+      <Route element={<RequireAuth />}>
+        <Route path="wishlist" element={<Wishlist />} />
+      </Route>
       <Route path="shoppingCart" element={<ShoppingCart />} />
       <Route path="checkout" element={<Checkout />} />
       <Route path="*" element={<NotFoundPage />} />

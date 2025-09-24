@@ -18,6 +18,7 @@ import shoppingCartReducer from "@store/reducers/shoppingCartSlice";
 import languageSlice from "@store/reducers/languagesSlice";
 import currencySlice from "@store/reducers/currenciesSlice";
 import wishlistSlice from "@store/reducers/wishlistSlice";
+import authorizationSlice from "@store/reducers/authorizationSlice";
 
 const config = {
   key: "root",
@@ -34,6 +35,7 @@ const reducers = combineReducers({
   language: languageSlice,
   currency: currencySlice,
   wishlist: wishlistSlice,
+  authorization: authorizationSlice,
 });
 
 const persisted = persistReducer(config, reducers);
