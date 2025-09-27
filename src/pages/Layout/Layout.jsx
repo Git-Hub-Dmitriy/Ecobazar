@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import * as style from "./Layout.module.scss";
 import { Outlet, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -7,11 +8,11 @@ import { products } from "@data/products";
 import Modal from "@components/Modal/Modal";
 import ReviewProduct from "@components/ReviewProduct/ReviewProduct";
 import BtnScrollUp from "@components/Buttons/BtnScrollUp/BtnScrollUp";
+import Loading from "./Loading/Loading";
 import { createContext, useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { changeModalReview } from "@store/reducers/activeModalSlice";
-
 export const blogFiltersContext = createContext();
 export const setBlogFiltersContext = createContext();
 export const shopFiltersContext = createContext();
@@ -54,7 +55,9 @@ export default function Layout() {
               <Header showMenu={showMenu} setShowMenu={setShowMenu} />
               {showMenu !== true ? (
                 <>
-                  <Outlet />
+                  <Suspense fallback={<Loading />}>
+                    <Outlet />
+                  </Suspense>
                   <Modal
                     activeModal={modalReview}
                     changeModal={changeModalReview}

@@ -1,29 +1,6 @@
+import { lazy } from "react";
 import "./App.module.scss";
 import Layout from "@pages/Layout/Layout";
-import About from "@pages/About/About";
-import Shop from "@pages/Shop/Shop";
-import Contact from "@pages/Contact/Contact";
-import Blog from "@pages/Blog/Blog";
-import Account from "@pages/Account/Account";
-import Faqs from "@pages/Faqs/Faqs";
-import NotFoundPage from "@pages/NotFoundPage/NotFoundPage";
-import Home from "@pages/Home/Home";
-import Product from "@pages/Product/Product";
-import Descriptions from "@pages/Product/Descriptions/Descriptions";
-import InformationProduct from "@pages/Product/InformationProduct/InformationProduct";
-import Feedback from "@pages/Product/Feedback/Feedback";
-import SinglePost from "@pages/SinglePost/SinglePost";
-import Login from "@pages/Login/Login";
-import Register from "@pages/Register/Register";
-import Dashboard from "@pages/Account/Dashboard/Dashboard";
-import OrderHistory from "@pages/Account/OrderHistory/OrderHistory";
-import Settings from "@pages/Account/Settings/Settings";
-import Shopping from "@pages/Account/Shopping/Shopping";
-import AccountWishlist from "@pages/Account/AccountWishlist/AccountWishlist";
-import Wishlist from "@pages/Wishlist/Wishlist";
-import ShoppingCart from "@pages/ShoppingCart/ShoppingCart";
-import SingleOrder from "@pages/Account/SingleOrder/SingleOrder";
-import Checkout from "@pages/Checkout/Checkout";
 import RequireAuth from "@pages/hoc/RequireAuth";
 import {
   Route,
@@ -36,6 +13,41 @@ import { filterHotDeals } from "@utils/filterHotDeals";
 import { products } from "@data/products";
 import { hotDeals } from "@data/hotDeals";
 import { popularProducts } from "@data/popularProducts";
+
+const About = lazy(() => import("./pages/About/About"));
+const Shop = lazy(() => import("./pages/Shop/Shop"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
+const Blog = lazy(() => import("./pages/Blog/Blog"));
+const Account = lazy(() => import("./pages/Account/Account"));
+const Faqs = lazy(() => import("./pages/Faqs/Faqs"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
+const Home = lazy(() => import("./pages/Home/Home"));
+const Product = lazy(() => import("./pages/Product/Product"));
+const Descriptions = lazy(() =>
+  import("./pages/Product/Descriptions/Descriptions")
+);
+const InformationProduct = lazy(() =>
+  import("./pages/Product/InformationProduct/InformationProduct")
+);
+const Feedback = lazy(() => import("./pages/Product/Feedback/Feedback"));
+const SinglePost = lazy(() => import("./pages/SinglePost/SinglePost"));
+const Register = lazy(() => import("./pages/Register/Register"));
+const Login = lazy(() => import("./pages/Login/Login"));
+const Dashboard = lazy(() => import("./pages/Account/Dashboard/Dashboard"));
+const OrderHistory = lazy(() =>
+  import("./pages/Account/OrderHistory/OrderHistory")
+);
+const Settings = lazy(() => import("./pages/Account/Settings/Settings"));
+const Shopping = lazy(() => import("./pages/Account/Shopping/Shopping"));
+const AccountWishlist = lazy(() =>
+  import("./pages/Account/AccountWishlist/AccountWishlist")
+);
+const Wishlist = lazy(() => import("./pages/Wishlist/Wishlist"));
+const ShoppingCart = lazy(() => import("./pages/ShoppingCart/ShoppingCart"));
+const SingleOrder = lazy(() =>
+  import("./pages/Account/SingleOrder/SingleOrder")
+);
+const Checkout = lazy(() => import("./pages/Checkout/Checkout"));
 
 const rout = createBrowserRouter(
   createRoutesFromElements(

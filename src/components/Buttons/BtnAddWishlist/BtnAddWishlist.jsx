@@ -3,6 +3,7 @@ import IconHeart from "@assets/iconHeart.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { addProductWishlist } from "@store/reducers/wishlistSlice";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function BtnAddWishlist({ product }) {
   const [modal, setModal] = useState({
@@ -11,7 +12,11 @@ export default function BtnAddWishlist({ product }) {
   });
   const dispatch = useDispatch();
   const wishlist = useSelector((store) => store.wishlist.wishlist);
+  const authorization = useSelector(
+    (store) => store.authorization.authorization
+  );
   const foundProduct = wishlist?.find((item) => item?.id === product?.id);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (modal.active === true) {
@@ -35,17 +40,21 @@ export default function BtnAddWishlist({ product }) {
     <>
       <button
         onClick={() => {
-          if (!foundProduct) {
-            setModal({
-              active: true,
-              message: "This product added in your wishlist",
-            });
-            dispatch(addProductWishlist({ product: product }));
+          if (authorization) {
+            if (!foundProduct) {
+              setModal({
+                active: true,
+                message: "This product added in your wishlist",
+              });
+              dispatch(addProductWishlist({ product: product }));
+            } else {
+              setModal({
+                active: true,
+                message: "this product already has been added in your wishlist",
+              });
+            }
           } else {
-            setModal({
-              active: true,
-              message: "this product already has been added in your wishlist",
-            });
+            navigate("login");
           }
         }}
         className={style.btnAddWishlist}

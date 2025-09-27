@@ -60,7 +60,7 @@
       .bestSale__textSale {
         width: 20%;
         height: 30px;
-        left: 150px;
+        left: 25%;
         border-radius: 10px;
       }
       border: 2px solid transparent;
@@ -166,7 +166,6 @@
       .bestSale {
         .bestSale__textSale {
           width: 20%;
-          left: 155px;
         }
         .bestSale__wrapImage .bestSale__wrapButtonAcquire {
           .btnAddWishlist {
@@ -240,7 +239,6 @@
           height: 35px;
         }
         .bestSale__textSale {
-          left: 185px;
           height: 35px;
         }
         .bestSale__wrapImage
@@ -297,9 +295,6 @@
         width: 20px;
         height: 20px;
       }
-      .bestSale__textSale {
-        left: 195px;
-      }
       .bestSale__wrapImage .bestSale__wrapButtonAcquire {
         .btnAddWishlist {
           width: 75px;
@@ -354,11 +349,10 @@
     .hotDeals__rowBottom {
       .bestSale {
         .discountProcentSale {
-          height: 40px;
+          height: 50px;
         }
         .bestSale__textSale {
-          height: 40px;
-          left: 220px;
+          height: 50px;
         }
         .bestSale__wrapImage .bestSale__wrapButtonAcquire {
           .btnAddWishlist {
@@ -387,7 +381,7 @@
       }
       .card {
         .discountProcentSale {
-          height: 40px;
+          height: 50px;
         }
         .btnAddWishlist {
           width: 70px;
@@ -429,7 +423,6 @@
         border-radius: 12px;
       }
       .bestSale__textSale {
-        left: 230px;
         border-radius: 12px;
       }
       .bestSale__wrapPrice
@@ -477,13 +470,6 @@
       grid-gap: 5px;
       .bestSale {
         border: 3px solid transparent;
-        .discountProcentSale {
-          height: 45px;
-        }
-        .bestSale__textSale {
-          height: 45px;
-          left: 260px;
-        }
         .bestSale__wrapImage .bestSale__wrapButtonAcquire {
           .btnAddWishlist {
             width: 100px;
@@ -526,9 +512,6 @@
       }
       .card {
         border: 3px solid transparent;
-        .discountProcentSale {
-          height: 45px;
-        }
         .card__wrapContent .starsRating .starsRating__star {
           width: 25px;
           height: 25px;
@@ -573,7 +556,7 @@
       }
       .bestSale__textSale {
         width: 20%;
-        left: 120px;
+        left: 27%;
       }
     }
     .card {
@@ -685,9 +668,6 @@
     .bestSale {
       grid-column: 1 / 3;
       grid-row: 1 / 2;
-      .bestSale__textSale {
-        left: 170px;
-      }
     }
     .card {
       grid-column: none;
@@ -726,9 +706,6 @@
     .bestSale {
       grid-column: auto;
       grid-row: auto;
-      .bestSale__textSale {
-        left: 120px;
-      }
     }
     .card {
       width: 90%;
