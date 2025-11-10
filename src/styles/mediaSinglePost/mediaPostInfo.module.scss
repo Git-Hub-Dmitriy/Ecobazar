@@ -1,3 +1,4 @@
+@use "@styles/variables.module.scss" as *;
 @media (min-width: 2000px) {
   #root .singlePost .singlePost__container .postInfo__wrapPost {
     .postInfo__innerTag {

@@ -1,6 +1,6 @@
-@import "./mediaSectionProducts.module.scss";
-@import "./mediaSectionCoupon.module.scss";
-@import "./mediaCartTotal.module.scss";
+@use "./mediaSectionProducts.module.scss";
+@use "./mediaSectionCoupon.module.scss";
+@use "./mediaCartTotal.module.scss";
 
 @media (min-width: 2000px) {
   #root .shoppingCart {

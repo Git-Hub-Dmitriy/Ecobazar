@@ -1,5 +1,5 @@
-@import "./mediaSectionInfo.module.scss";
-@import "./mediaSectionSubscribe.module.scss";
+@use "./mediaSectionInfo.module.scss";
+@use "./mediaSectionSubscribe.module.scss";
 
 @media (min-width: 2000px) {
   #root .footer {

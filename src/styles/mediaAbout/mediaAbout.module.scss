@@ -1,7 +1,7 @@
-@import "./mediaDescription.module.scss";
-@import "./mediaSectionDeliver.module.scss";
-@import "./mediaSectionFeatures.module.scss";
-@import "./mediaSectionTeam.module.scss";
+@use "./mediaDescription.module.scss";
+@use "./mediaSectionDeliver.module.scss";
+@use "./mediaSectionFeatures.module.scss";
+@use "./mediaSectionTeam.module.scss";
 
 @media (min-width: 2000px) {
   #root .about {

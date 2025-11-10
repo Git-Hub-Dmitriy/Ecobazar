@@ -1,13 +1,13 @@
-@import "./mediaAdvertising.module.scss";
-@import "./mediaBanners.module.scss";
-@import "./mediaFeaturedProducts.module.scss";
-@import "./mediaFeaturesStore.module.scss";
-@import "./mediaHoDeals.module.scss";
-@import "./mediaLatestNews.module.scss";
-@import "./mediaPopularCategories.module.scss";
-@import "./mediaPopularProducts.module.scss";
-@import "./mediaSectionInstagram.module.scss";
-@import "./mediaStocks.module.scss";
+@use "./mediaAdvertising.module.scss";
+@use "./mediaBanners.module.scss";
+@use "./mediaFeaturedProducts.module.scss";
+@use "./mediaFeaturesStore.module.scss";
+@use "./mediaHoDeals.module.scss";
+@use "./mediaLatestNews.module.scss";
+@use "./mediaPopularCategories.module.scss";
+@use "./mediaPopularProducts.module.scss";
+@use "./mediaSectionInstagram.module.scss";
+@use "./mediaStocks.module.scss";
 
 @media (min-width: 2000px) {
   #root .home {

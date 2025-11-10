@@ -1,9 +1,9 @@
-@import "./mediaPostCategories.module.scss";
-@import "./mediaPostGallery.module.scss";
-@import "./mediaPostInfo.module.scss";
-@import "./mediaPostRecentlyAdded.module.scss";
-@import "./mediaPostSearch.module.scss";
-@import "./mediaPostTags.module.scss";
+@use "./mediaPostCategories.module.scss";
+@use "./mediaPostGallery.module.scss";
+@use "./mediaPostInfo.module.scss";
+@use "./mediaPostRecentlyAdded.module.scss";
+@use "./mediaPostSearch.module.scss";
+@use "./mediaPostTags.module.scss";
 
 @media (hover: hover) {
   #root .singlePost {

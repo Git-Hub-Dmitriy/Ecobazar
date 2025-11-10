@@ -1,4 +1,4 @@
-@import "@styles/variables.module.scss";
+@use "@styles/variables.module.scss" as *;
 @media (hover: hover) {
   #root .shop .shop__gridProducts .filterProducts {
     .categories .categories__wrapButtons .categories__innerButton:hover {

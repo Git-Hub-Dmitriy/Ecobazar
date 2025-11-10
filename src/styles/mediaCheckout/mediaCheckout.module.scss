@@ -1,5 +1,5 @@
-@import "./mediaInformation.module.scss";
-@import "./mediaOrderSummery.module.scss";
+@use "./mediaInformation.module.scss";
+@use "./mediaOrderSummery.module.scss";
 
 @media (min-width: 2000px) {
   #root .checkout {

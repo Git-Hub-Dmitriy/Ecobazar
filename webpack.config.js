@@ -96,7 +96,12 @@ module.exports = (env) => {
                 },
               },
             },
-            "sass-loader",
+            {
+              loader: "sass-loader",
+              options: {
+                api: "modern-compiler",
+              },
+            },
           ],
         },
         {

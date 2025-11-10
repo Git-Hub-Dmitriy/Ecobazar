@@ -1,6 +1,6 @@
-@import "./mediaInfoProduct.module.scss";
-@import "./mediaRelatedProducts.module.scss";
-@import "./mediaSliderImage.module.scss";
+@use "./mediaInfoProduct.module.scss";
+@use "./mediaRelatedProducts.module.scss";
+@use "./mediaSliderImage.module.scss";
 
 @media (hover: hover) {
   #root .product {

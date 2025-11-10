@@ -1,5 +1,5 @@
-@import "./mediaBlogCategories.module.scss";
-@import "./mediaBlogRecentlyAdded.module.scss";
+@use "./mediaBlogCategories.module.scss";
+@use "./mediaBlogRecentlyAdded.module.scss";
 
 @media (hover: hover) {
   #root .blog {

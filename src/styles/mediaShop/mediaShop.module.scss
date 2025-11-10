@@ -1,5 +1,5 @@
-@import "./mediaFiltersProduct.module.scss";
-@import "./mediaListProducts.module.scss";
+@use "./mediaFiltersProduct.module.scss";
+@use "./mediaListProducts.module.scss";
 
 @media (hover: hover) {
   #root .shop {

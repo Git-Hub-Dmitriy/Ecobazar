@@ -1,3 +1,5 @@
+@use "@styles/variables.module.scss" as *;
+
 @media (hover: hover) {
   #root .cartTotal .cartTotal__btnPayment:hover {
     transform: scale(1.1);

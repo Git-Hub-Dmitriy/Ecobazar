@@ -1,10 +1,10 @@
-@import "./mediaDashboard.module.scss";
-@import "./mediaNav.module.scss";
-@import "./mediaOrderHistory.module.scss";
-@import "./mediaSettings.module.scss";
-@import "./mediaShopping.module.scss";
-@import "./mediaSingleOrder.module.scss";
-@import "./mediaAccountWishlist.module.scss";
+@use "./mediaDashboard.module.scss";
+@use "./mediaNav.module.scss";
+@use "./mediaOrderHistory.module.scss";
+@use "./mediaSettings.module.scss";
+@use "./mediaShopping.module.scss";
+@use "./mediaSingleOrder.module.scss";
+@use "./mediaAccountWishlist.module.scss";
 
 @media (hover: hover) {
   #root .account {
