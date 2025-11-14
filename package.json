@@ -2,6 +2,7 @@
   "name": "ecobazar",
   "version": "1.0.0",
   "homepage": ".",
+  "baseURL": "./",
   "description": "",
   "main": "index.js",
   "scripts": {
