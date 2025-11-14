@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const webpack = require("webpack");
-const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
 const CircularDependencyPlugin = require("circular-dependency-plugin");
@@ -55,7 +54,6 @@ module.exports = (env) => {
       !isDev
         ? new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
         : undefined,
-      isDev ? new ReactRefreshWebpackPlugin() : undefined,
       new CaseSensitivePathsPlugin(),
       new CircularDependencyPlugin({
         exclude: /a\.js|node_modules/,
@@ -75,12 +73,8 @@ module.exports = (env) => {
             options: {
               presets: [
                 "@babel/preset-env",
-                [
-                  "@babel/preset-react",
-                  { runtime: isDev ? "automatic" : "classic" },
-                ],
+                ["@babel/preset-react", { runtime: "automatic" }],
               ],
-              plugins: [require.resolve("react-refresh/babel")].filter(Boolean),
             },
           },
         },
@@ -92,7 +86,7 @@ module.exports = (env) => {
               loader: "css-loader",
               options: {
                 modules: {
-                  localIdentName: isDev ? "[local]" : "[hash:base64:8]",
+                  localIdentName: "[local]",
                 },
               },
             },

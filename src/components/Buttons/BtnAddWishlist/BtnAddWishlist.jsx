@@ -3,7 +3,9 @@ import IconHeart from "@assets/iconHeart.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { addProductWishlist } from "@store/reducers/wishlistSlice";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { changeModalReview } from "@store/reducers/activeModalSlice";
+import { resetProduct } from "@store/reducers/amountProductSlice";
 
 export default function BtnAddWishlist({ product }) {
   const [modal, setModal] = useState({
@@ -17,6 +19,7 @@ export default function BtnAddWishlist({ product }) {
   );
   const foundProduct = wishlist?.find((item) => item?.id === product?.id);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     if (modal.active === true) {
@@ -54,7 +57,15 @@ export default function BtnAddWishlist({ product }) {
               });
             }
           } else {
-            navigate("login");
+            dispatch(
+              changeModalReview({
+                modalReview: false,
+                activeImage: false,
+                id: 0,
+              })
+            );
+            dispatch(resetProduct(1));
+            navigate("/login", { replace: true, state: { from: location } });
           }
         }}
         className={style.btnAddWishlist}

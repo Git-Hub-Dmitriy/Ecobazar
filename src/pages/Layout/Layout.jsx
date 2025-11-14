@@ -31,6 +31,14 @@ export default function Layout() {
   const location = useLocation();
 
   useEffect(() => {
+    if (showMenu === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [showMenu]);
+
+  useEffect(() => {
     if (authorization === true) {
       if (location.pathname === "login") {
         window.onpopstate = function (event) {

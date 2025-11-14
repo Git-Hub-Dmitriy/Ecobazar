@@ -26,8 +26,6 @@ export default function Post({ active, setActive, bannar, path }) {
 
   return (
     <div
-      onMouseOver={() => setActive(bannar.id)}
-      onMouseOut={() => setActive(null)}
       className={
         active !== bannar.id ? style.post : `${style.post} ${style.post_active}`
       }

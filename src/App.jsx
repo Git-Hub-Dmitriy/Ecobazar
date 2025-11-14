@@ -14,6 +14,7 @@ import { products } from "@data/products";
 import { hotDeals } from "@data/hotDeals";
 import { popularProducts } from "@data/popularProducts";
 
+const Home = lazy(() => import("./pages/Home/Home"));
 const About = lazy(() => import("./pages/About/About"));
 const Shop = lazy(() => import("./pages/Shop/Shop"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -21,7 +22,6 @@ const Blog = lazy(() => import("./pages/Blog/Blog"));
 const Account = lazy(() => import("./pages/Account/Account"));
 const Faqs = lazy(() => import("./pages/Faqs/Faqs"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
-const Home = lazy(() => import("./pages/Home/Home"));
 const Product = lazy(() => import("./pages/Product/Product"));
 const Descriptions = lazy(() =>
   import("./pages/Product/Descriptions/Descriptions")
@@ -94,7 +94,12 @@ filterHotDeals(products, hotDeals);
 export default function App() {
   return (
     <>
-      <RouterProvider router={rout} />
+      <RouterProvider
+        future={{
+          v7_startTransition: true,
+        }}
+        router={rout}
+      />
     </>
   );
 }

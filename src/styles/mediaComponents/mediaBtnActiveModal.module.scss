@@ -8,3 +8,8 @@
     transform: scale(1.2);
   }
 }
+@media (max-width: 600px) {
+  #root .btnActiveModal {
+    display: none;
+  }
+}
