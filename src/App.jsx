@@ -95,6 +95,7 @@ export default function App() {
   return (
     <>
       <RouterProvider
+        basename="/ecobazar"
         future={{
           v7_startTransition: true,
         }}
