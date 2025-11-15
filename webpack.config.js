@@ -21,7 +21,7 @@ module.exports = (env) => {
 
     watch: true,
 
-    entry: path.resolve(__dirname, "src", "index.js"),
+    entry: path.resolve(__dirname, "index.js"),
     output: {
       path: path.resolve(__dirname, "build"),
       filename: "main.[contenthash].js",
