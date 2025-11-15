@@ -51,7 +51,7 @@ const Checkout = lazy(() => import("./pages/Checkout/Checkout"));
 
 const rout = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/Ecobazar" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="shop" element={<Shop />} />
       <Route path="shop/:id/*" element={<Product />}>
